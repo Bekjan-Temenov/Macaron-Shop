@@ -1,9 +1,11 @@
-
+import { Container } from "../Container/Container";
 function Home() {
   return (
-    <div>
-      home
-    </div>
+    <Container>
+      <div>
+        home
+      </div>
+    </Container>
   );
 }
 
