@@ -25,10 +25,7 @@ export const router = createBrowserRouter([
         path: "/no-page",
         element: <NoPage />,
       },
-      {
-        path: "/Basket",
-        element: <Basket />,
-      },
+  
  
       {
         path: "/RegistrationForm",
