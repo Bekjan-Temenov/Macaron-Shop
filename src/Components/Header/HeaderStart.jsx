@@ -6,6 +6,7 @@ import card from "../../assets/bekjan/svg/card.svg"
 import telegram from "../../assets/bekjan/svg/telegram.svg"
 import wkontakt from "../../assets/bekjan/svg/wkontakt.svg"
 import odnaklass from "../../assets/bekjan/svg/odnaklass.svg"
+import { RxAvatar } from "react-icons/rx";
 import "./Header.css"
 
 function HeaderStart() {
@@ -55,6 +56,9 @@ function HeaderStart() {
               <img className="img" src={odnaklass} alt="img" />
             </Link>
           </div>
+          <Link to="sign-up">
+              <RxAvatar className="avatar"/>
+          </Link>
         </div>
       </Container>
     </div>
