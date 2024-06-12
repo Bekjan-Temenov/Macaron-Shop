@@ -1,5 +1,5 @@
 import './Forgot.css';
-// import makaron from '../../assets/aftandil/img/makaron.png'
+import makaron from "../../../assets/aftandil/img/makaron.png";
 import { Link } from 'react-router-dom';
 
 
@@ -8,28 +8,18 @@ const Forgot = () => {
     <div className="login-container">
       <div className="login-box">
         <div className="login-header">
-          <img 
-            // src={makaron } 
-            alt="Macarons" 
-            className="macaron-image" 
+          <img
+            src={makaron}
+            alt="Macarons"
+            className="macaron-image"
           />
         </div>
-        <div className="login-body">
-          <h>Забыли пароль?</h>
-          <form>
-            <div className="form-group">
-              <label  htmlFor="email">Email</label>
-              <input type="email" id="email" name="email" required />
-            </div>
-          
-            <div className="form-footer">
-            
-              <button type="submit" className="login-button">продолжить</button>
-            </div>
-          </form>
-          <div className="signup-link">
-            Ещё не зарегистрированы? <Link to="/RegistrationForm">Зарегистрироваться</Link>
-          </div>
+        <div className="password">
+          <h1>Забыли пароль?</h1>
+          <span>Инструкция по восстановлению пароля отправлена на указанный e-mail адрес. Проверьте новые письма.</span>
+          <Link to="/">
+            <button type="submit" className="login-button">продолжить</button>
+          </Link>
         </div>
       </div>
     </div>

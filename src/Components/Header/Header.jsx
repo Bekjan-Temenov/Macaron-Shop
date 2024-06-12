@@ -3,11 +3,13 @@ import { Link } from "react-router-dom";
 import logo from "../../assets/bekjan/svg/logo.svg"
 import dni from "../../assets/bekjan/svg/dni.svg"
 import HeaderStart from "./HeaderStart";
+import Advertising from "./Advertising";
 import "./Header.css"
 
 function Header() {
   return (
     <>
+      <Advertising />
       <HeaderStart />
       <Container>
         <div className="header">
@@ -51,5 +53,4 @@ function Header() {
     </>
   );
 }
-
 export default Header;

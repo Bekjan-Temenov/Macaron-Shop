@@ -1,4 +1,3 @@
-import React from 'react'
 import Forgot from '../Components/Auth/Forgot/Forgot'
 
 const ForgotPages = () => {

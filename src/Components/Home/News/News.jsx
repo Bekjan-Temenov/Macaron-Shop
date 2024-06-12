@@ -60,8 +60,8 @@ export default function News() {
                     <button className="nabor">
                         Все праздничные наборы
                     </button>
-                </Swiper>
+                </Swiper>   
             </div>
-        </Container>
+        </Container >
     );
 }

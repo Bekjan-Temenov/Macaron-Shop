@@ -1,37 +1,29 @@
-/* body {
-    margin: 0;
-    font-family: 'Arial', sans-serif;
-    background-color: #f7f7f7;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-  } */
-  
-  .login-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100%;
-  }
-  
   .login-box {
-    width: 350px;
-    padding: 0;
-    background-color: #fff;
+    width:570px;
+    height: 500px;
+    margin: 0 auto;
     border-radius: 10px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    overflow: hidden;
+    margin-bottom: 50px;
   }
   
   .login-header img {
     width: 100%;
     height: auto;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
   }
   
   .login-body {
-    padding: 30px 40px;
     text-align: center;
+    box-sizing: border-box;
+    margin-top: -10px;
+    border: 1px solid rgb(237, 237, 240);
+    border-radius: 0px 0px 5px 5px;
+    background: rgb(247, 235, 229);
+    padding-bottom: 50px; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
   
   .login-body h2 {
@@ -45,24 +37,28 @@
     text-align: left; 
     display: flex;
     flex-direction: column;
-    /* border:1px solid red */
   }
-  
+  .login-form{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+  }
   .form-group label {
     display: block;
     margin-bottom: 8px;
     font-weight: 600;
     color: #555;
+    margin: 0;
   }
-  
   .form-group input {
-    width: 100%;
+    width: 370px;
     padding: 10px;
     border: 1px solid #ddd;
     border-radius: 5px;
     box-sizing: border-box;
     font-size: 14px;
     color: #555;
+    margin: 0;
   }
   
   .form-group input:focus {
@@ -70,15 +66,21 @@
     outline: none;
   }
   .form-link{
-    align-items: end;
-    margin-left: 150px;
-    margin-top: 5px;
+    text-align: end;
+    margin-right: 10px;
+    margin-bottom: 10px;
     color: #e6376e;
+    text-decoration: none;
   }
   .form-footer {
     display: flex;
     flex-direction: column;
     margin-top: 10px;
+    width:370px;
+  }
+  .form-footer button{
+    width: 100%;
+    margin-left: -0px;
   }
   
   .forgot-password {
@@ -105,18 +107,21 @@
     background-color: #e6376e;
   }
   
-  .signup-link {
+  .sign-up-link {
     margin-top: 20px;
     font-size: 14px;
     color: #555;
+    width: 200px;
+    text-align: center;
+    margin-left: 0px;
   }
   
-  .signup-link a {
+  .sign-up-link a {
     color: #ff4081;
     text-decoration: none;
   }
   
-  .signup-link a:hover {
+  .sign-up-link a:hover {
     text-decoration: underline;
   }
   
