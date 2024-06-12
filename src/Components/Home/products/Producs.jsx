@@ -45,6 +45,7 @@ const Producs = () => {
                 <div className="products">
                     {productData.map((product, index) => (
                         <div key={index} className="producter">
+                            
                             <img className="img-product" src={products} alt="img" />
                             <div className="infos">
                                 <div className="texts">
