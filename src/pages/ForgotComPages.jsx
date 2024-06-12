@@ -1,5 +1,5 @@
 import React from 'react'
-import ForgotCom from '../Components/ForgotCom/ForgotCom'
+import ForgotCom from '../Components/Auth/ForgotCom/ForgotCom'
 
 const ForgotComPages = () => {
   return (

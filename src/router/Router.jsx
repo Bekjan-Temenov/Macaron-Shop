@@ -3,8 +3,7 @@ import Layout from "../layout/Layout";
 import NotFoundPage from "../pages/NotFoundPage";
 import HomePage from "../pages/HomePage";
 import NoPage from "../pages/NoPage";
-import Basket from "../Components/BasketCom/Basket";
-import RegistrationForm from "../Components/RegistrationForm/RegistrationForm";
+import RegistrationForm from "../Components/Auth/RegistrationForm/RegistrationForm";
 import LoginPages from "../pages/LoginPages";
 import ForgotPages from "../pages/ForgotPages";
 import ForgotComPages from "../pages/ForgotComPages";
@@ -32,15 +31,15 @@ export const router = createBrowserRouter([
         element: <RegistrationForm />,
       },
       {
-        path: "/Login",
+        path: "/sign-in",
         element: <LoginPages />,
       },
       {
-        path: "/Forgot",
+        path: "/sign-up",
         element: <ForgotPages />,
       },
       {
-        path: "/ForgotCom",
+        path: "/sign-in/password",
         element: <ForgotComPages />,
       },
     ],

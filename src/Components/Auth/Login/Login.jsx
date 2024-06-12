@@ -1,6 +1,6 @@
-import React from "react";
+// import React from "react";
 import "./Login.css";
-import makaron from "../../assets/aftandil/img/makaron.png";
+// import makaron from "../../assets/aftandil/img/makaron.png";
 import { Link } from "react-router-dom";
 
 const Login = () => {
@@ -8,7 +8,7 @@ const Login = () => {
     <div className="login-container">
       <div className="login-box">
         <div className="login-header">
-          <img src={makaron} alt="Macarons" className="macaron-image" />
+          {/* <img src={makaron} al t="Macarons" className="macaron-image" /> */}
         </div>
         <div className="login-body">
           <h2>Вход</h2>

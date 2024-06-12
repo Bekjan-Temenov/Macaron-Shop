@@ -1,27 +1,23 @@
-import React from 'react';
-import './Forgot.css';
-import makaron from '../../assets/aftandil/img/makaron.png'
+import './ForgotCom.css';
+// import makaron from '../../assets/aftandil/img/makaron.png'
 import { Link } from 'react-router-dom';
 
 
-const Forgot = () => {
+const ForgotCom = () => {
   return (
     <div className="login-container">
       <div className="login-box">
         <div className="login-header">
           <img 
-            src={makaron } 
+            // src={makaron } 
             alt="Macarons" 
             className="macaron-image" 
           />
         </div>
         <div className="login-body">
-          <h>Забыли пароль?</h>
           <form>
-            <div className="form-group">
-              <label  htmlFor="email">Email</label>
-              <input type="email" id="email" name="email" required />
-            </div>
+          <h2>Забыли пароль?</h2>
+           
           
             <div className="form-footer">
             
@@ -29,7 +25,7 @@ const Forgot = () => {
             </div>
           </form>
           <div className="signup-link">
-            Ещё не зарегистрированы? <Link to="/RegistrationForm">Зарегистрироваться</Link>
+             <Link to="/sign-in/password">Зарегистрироваться</Link>
           </div>
         </div>
       </div>
@@ -37,4 +33,4 @@ const Forgot = () => {
   );
 }
 
-export default Forgot;
+export default ForgotCom;
