@@ -80,6 +80,7 @@ a:hover {
     text-transform: uppercase;
 }
 .reclama{
+    background-image: url("../../assets/bekjan/svg/reklama.svg");
     width: 100%;
     display: flex;
     align-items: center;
