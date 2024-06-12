@@ -1,0 +1,72 @@
+  .product{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+    width: 270px;
+    padding-bottom: 25px;
+  }
+  .text-sale{
+    color: rgb(41, 41, 41);
+    font-family: Montserrat;
+    font-size: 30px;
+    font-weight: 600;
+    line-height: 37px;
+    letter-spacing: 0%;
+    text-align: center;
+    margin-top: 94px;
+    margin-bottom: 50px;
+  }
+  .product-text{
+    border-radius: 0px 0px 5px 5px;
+    background: rgb(140, 196, 236);
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: -4px;
+    width: 270px;
+    height: 110px;
+  }
+  .product-text h3{
+    color: rgb(255, 255, 255);
+  font-family: Montserrat;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 20px;
+  letter-spacing: 0%;
+  text-align: center; 
+  }
+  .sale{
+    margin-top:10px;
+    position: absolute;
+  }
+  .carusel{
+    padding-bottom: 142px;
+  }
+  .swiper-button-prev,
+.swiper-button-next {
+    position: absolute;
+    top: 40%;
+    width: 27px;
+    height: 44px;
+    margin-top: -22px;
+    z-index: 10;
+    cursor: pointer;
+    color: #fff;
+    text-align: center;
+    line-height: 44px;
+    font-size: 18px;
+    font-weight: bold;
+    background: rgba(0, 0, 0, 0.5);
+    border-radius: 50%;
+    user-select: none;
+}
+
+.swiper-button-prev {
+    left: 10px;
+}
+
+.swiper-button-next {
+    right: 10px;
+}
