@@ -4,6 +4,10 @@
     justify-content: space-between;
     flex-direction: column;
 }
+.color{
+    background: rgb(247, 235, 229);
+    width: screen;
+}
 .header-color{
     background: rgb(247, 235, 229);
     display: flex;
