@@ -15,9 +15,7 @@ import { FreeMode, Navigation, Autoplay } from 'swiper/modules';
 
 const Slide = ({ image, date, text, note }) => (
     <div className='news-product'>
-        {/* <div className='news-img'> */}
         <img className='news-img' src={image} alt="Product" />
-        {/* </div> */}
         <div className='news-text'>
             <p>{date}</p>
             <h3>{text}</h3>
@@ -38,7 +36,6 @@ export default function News() {
 
     return (
         <Container>
-
             <div className='news-carusel'>
                 <div className='news-text-sale'>
                     Новости
@@ -63,8 +60,8 @@ export default function News() {
                     <button className="nabor">
                         Все праздничные наборы
                     </button>
-                </Swiper>
+                </Swiper>   
             </div>
-        </Container>
+        </Container >
     );
 }

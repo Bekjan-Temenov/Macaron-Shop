@@ -75,4 +75,13 @@
 .news-img{
     width: 370px;
     height: 210px;
+    border:1px solid red;
+}
+.nabor{
+  width: 293px;
+  height: 52px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 18px 48px;
 }
