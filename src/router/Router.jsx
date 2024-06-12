@@ -2,7 +2,7 @@ import { createBrowserRouter } from "react-router-dom";
 import Layout from "../layout/Layout";
 import NotFoundPage from "../pages/NotFoundPage";
 import HomePage from "../pages/HomePage"
-import SignInPage from "../pages/Sign-InPage";
+import SignInPage from "../pages/AuthPage";
 import NoPage from "../pages/NoPage";
 
 export const router = createBrowserRouter([{
