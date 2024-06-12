@@ -79,3 +79,33 @@ a:hover {
     text-align: left;
     text-transform: uppercase;
 }
+.reclama{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.rec-img{
+    width: 100%;
+    height: 50px;
+    position: absolute;
+}
+.rec-texts{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    z-index: 1;
+}
+.rec-icon{
+    width: 40px;
+    height: 40px;
+}
+.rec-text{
+    color: rgb(0, 0, 0);
+    font-family: Proxima Nova;
+    font-size: 18px;
+    font-weight: 300;
+    line-height: -1px;
+    letter-spacing: 2%;
+    text-align: center;
+}
