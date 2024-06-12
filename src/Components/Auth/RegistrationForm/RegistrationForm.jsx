@@ -1,6 +1,6 @@
 import './RegistrationForm.css';
 // import makaron from '../../assets/aftandil/img/makaron.png'
-import { Container } from '../../Container/Container';
+import { Container } from '../Container/Container';
 import { Link } from 'react-router-dom';
 
 const RegistrationForm = () => {
