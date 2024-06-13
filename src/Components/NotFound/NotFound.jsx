@@ -11,12 +11,13 @@ const NotFound = () => {
     <>
     <Header/>
     <div className="not-found">
-    <img src={nodfound  } alt="" />
-      <p className='p1'>Извините, страница не найдена</p>
+    <img className='image' src={nodfound  } alt="" />
       <Link to="/">
-      <button className="btn">Назад</button>
+      <button className="back-button">Назад</button>
       </Link>
+      <div className='j1'></div>
     </div>
+    
     <Footer/>
     </>
   );

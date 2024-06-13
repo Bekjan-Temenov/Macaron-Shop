@@ -3,6 +3,7 @@
     text-align: center;
     margin-top: 50px;
     font-family: 'Arial', sans-serif;
+    margin-right: 80px;
   }
   
   .error-code {
@@ -47,12 +48,9 @@
     font-size: 40px;
   }
   
-  p {
-    font-size: 24px;
-    color: #333;
-  }
+
   
-  .btn {
+  .back-button {
     width: 200px;
     margin-top: 20px;
     padding: 10px 20px;
@@ -62,9 +60,19 @@
     border: none;
     border-radius: 5px;
     cursor: pointer;
+    margin-left: -370px;
+    border:1px solid red;
+    /* gap: 50px; */
+    margin-top: 50px;
   }
   
   .back-button:hover {
     background-color: #e91e63;
   }
   
+  .image {
+    margin-top: 20px;
+  }
+  .j1 {
+    height: 60px;
+  }
