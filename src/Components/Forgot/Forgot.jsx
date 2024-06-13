@@ -25,7 +25,11 @@ const Forgot = () => {
           
             <div className="form-footer">
             
-              <button type="submit" className="login-button">продолжить</button>
+                <Link to="/ForgotCom">
+              <button type="submit" className="login-button"> 
+              продолжить
+              </button>
+              </Link>
             </div>
           </form>
           <div className="signup-link">

@@ -3,7 +3,6 @@ import Layout from "../layout/Layout";
 import NotFoundPage from "../pages/NotFoundPage";
 import HomePage from "../pages/HomePage";
 import NoPage from "../pages/NoPage";
-import Basket from "../Components/BasketCom/Basket";
 import RegistrationForm from "../Components/RegistrationForm/RegistrationForm";
 import LoginPages from "../pages/LoginPages";
 import ForgotPages from "../pages/ForgotPages";
