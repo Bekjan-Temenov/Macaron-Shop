@@ -7,7 +7,7 @@ import RegistrationForm from "../Components/Auth/RegistrationForm/RegistrationFo
 import LoginPages from "../Components/Auth/Login/Login";
 import ForgotPages from "../Components/Auth/Forgot/Forgot";
 import ForgotComPages from "../Components/Auth/ForgotCom/ForgotCom";
-
+import InfoPages from "../pages/InfoPages";
 
 
 export const router = createBrowserRouter([
@@ -39,6 +39,10 @@ export const router = createBrowserRouter([
             {
                 path: "/no-page",
                 element: <NoPage />,
+            },
+            {
+                path:"/info/:id",
+                element:<InfoPages/>
             }
         ],
     },

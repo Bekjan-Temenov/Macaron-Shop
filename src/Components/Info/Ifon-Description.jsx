@@ -15,13 +15,12 @@ export default function IfonDescription() {
 
   return (
     <div className="info-des">
-
     <Box sx={{ width: '100%', typography: 'body1' }}>
       <TabContext value={value}>
         <Box sx={{ borderBottom: 1, borderColor: 'divider' }}>
           <TabList onChange={handleChange} aria-label="lab API tabs example">
-            <StyledTab label="Описание" value="1" />
-            <StyledTab label="Состав и пищевая ценность" value="2" />
+            <StyledTab label="Описание" value="1" /> 
+            <StyledTab label="Состав и пищевая ценность" value="2" /> 
             <StyledTab label="Условия и срок хранения" value="3" />
           </TabList>
         </Box>
@@ -37,8 +36,6 @@ export default function IfonDescription() {
     </div>
   );
 }
-
-// const TabListColor = 
 
 const StyledTab = styled(Tab)(({ theme }) => ({
   '&.Mui-selected': {
