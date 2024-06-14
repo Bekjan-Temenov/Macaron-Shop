@@ -1,0 +1,72 @@
+/* Общие стили для контейнера профиля */
+.Profile {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 600px;
+    margin: 0 auto;
+    margin-top: 20px;
+  }
+  
+  /* Стили для изображения профиля */
+  .Profile__image {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    margin-bottom: 20px;
+  }
+  
+  /* Основной контейнер для полей ввода */
+  .inp_main {
+    width: 100%;
+  }
+  
+  /* Стили для контейнеров полей ввода */
+  .inProfile, .inProfile2 {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+  
+  /* Стили для полей ввода */
+  .inp, .inp_2, .inp_3, .inp_4 {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    transition: border-color 0.3s, box-shadow 0.3s;
+    margin-top: 30px;
+  }
+  
+  .inp:focus, .inp_2:focus, .inp_3:focus, .inp_4:focus {
+    border-color: #d81b60;
+    box-shadow: 0 0 5px #d81b60;
+    outline: none;
+  }
+  
+  /* Стили для кнопки */
+  button {
+    background-color: #d81b60;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  button:hover {
+    background-color: #d81b60;
+  }
+  
+  button:focus {
+    outline: none;
+    box-shadow: 0 0 5px #d81b60;
+  }
+  

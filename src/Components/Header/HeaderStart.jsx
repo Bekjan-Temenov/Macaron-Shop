@@ -10,8 +10,9 @@ import "./Header.css"
 
 function HeaderStart() {
   return (
-    <Container>
-      <div className="header-color">
+    <div className="color">
+      <Container>
+        <div className="header-color">
           <Link to="/no-page">
             <p>Гарантия свежести </p>
           </Link>
@@ -55,7 +56,8 @@ function HeaderStart() {
             </Link>
           </div>
         </div>
-    </Container>
+      </Container>
+    </div>
   );
 }
 
