@@ -8,7 +8,8 @@ import LoginPages from "../Components/Auth/Login/Login";
 import ForgotPages from "../Components/Auth/Forgot/Forgot";
 import ForgotComPages from "../Components/Auth/ForgotCom/ForgotCom";
 import InfoPages from "../pages/InfoPages";
-
+import BasketPage from "../pages/Basket/BasketPage";
+import DelivPage from "../pages/DelivPage";
 
 export const router = createBrowserRouter([
     {
@@ -43,7 +44,16 @@ export const router = createBrowserRouter([
             {
                 path:"/info/:id",
                 element:<InfoPages/>
+            },
+            {
+                path:"/deliv",
+                element:<DelivPage/>
+            },
+            {
+                path:"/basket",
+                element:<BasketPage/>
             }
         ],
     },
 ]);
+
