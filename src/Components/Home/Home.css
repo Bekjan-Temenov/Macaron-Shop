@@ -1,0 +1,164 @@
+.banner {
+    background-image: url('../../assets/bekjan/img/banners.png');
+    background-size: cover; 
+    background-position:start; 
+    height: 475px; 
+    display: flex;
+    margin-top: 5px;
+    margin-bottom: 5px;
+  }
+.banner-text {
+display: flex;
+flex-direction: column;
+align-items: center;
+margin-right: 160px;
+margin-bottom: 80px;
+}
+    .banner-text h1{
+        color: rgb(41, 41, 41);
+        font-family: Montserrat;
+        font-size: 22px;
+        font-weight: 600;
+        line-height: 27px;
+        letter-spacing: 0%;
+        text-transform: uppercase;         
+}
+.banners{
+    padding-right: 80px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: flex-end;
+}
+.banner p {
+    color: rgb(41, 41, 41);
+    font-family: Montserrat;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 20px;
+    letter-spacing: 0%;
+}
+.lines{
+    display: flex;
+    align-items: center;
+    gap:5px;
+}
+.line{
+    background-color: black;
+    width: 29px;
+    height: 0.3px;
+    border-radius: 10px;
+    border: 1.5px solid rgb(0, 0, 0);
+
+}
+.banner-flex{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: -60px;
+}
+.banner-flex h1{
+    color: rgb(41, 41, 41);
+    font-family: Montserrat;
+    font-size: 42px;
+    font-weight: 600;
+    line-height: 51px;
+    letter-spacing: 0%;
+    text-align: center;
+    margin-bottom: -15px;
+}
+.banner-flex p{
+    color: rgb(41, 41, 41);
+    font-family: Proxima Nova;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: -1px;
+    letter-spacing: 0%;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 499px;
+    margin-top: 10px;
+
+}
+.sets {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-evenly;
+    gap:20px;
+  }
+.usesets{
+    background-image: url('../../assets/bekjan/svg/bg.svg');
+    width: 570px;
+    height: 260px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.usesets:nth-child(1) {
+    background-image: url('../../assets/bekjan/svg/bg.svg');
+}
+
+.usesets:nth-child(2) {
+    background-image: url('../../assets/bekjan/svg/bg1.svg');
+}
+
+.usesets:nth-child(3) {
+    background-image: url('../../assets/bekjan/svg/bg2.svg');
+}
+
+.usesets:nth-child(4) {
+    background-image: url('../../assets/bekjan/svg/bg3.svg');
+}
+
+.usesets:nth-child(5) {
+    background-image: url('../../assets/bekjan/svg/bg4.svg');
+}
+
+.usesets:nth-child(6) {
+    background-image: url('../../assets/bekjan/svg/bg5.svg');
+}
+
+.circle{
+    background-color: white;
+    border-radius: 100%;
+    width: 100px;
+    height: 100px;
+    margin-bottom: 0px;
+}
+.usesets h1{
+    color: rgb(41, 41, 41);
+    font-family: Montserrat;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 24px;
+    letter-spacing: 0%;
+    text-align: center;
+}
+.usesets p{
+    color: rgb(41, 41, 41);
+    font-family: Proxima Nova;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: -1px;
+    letter-spacing: 0%;
+    text-align: center; 
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center ;
+    width: 350px;
+}
+.arrow{
+    display: flex;
+    align-items: center;
+    margin-bottom: -20px;
+    gap:10px
+}
+.arrow img {
+    margin-top: 3px;
+}
