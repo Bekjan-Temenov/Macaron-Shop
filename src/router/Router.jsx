@@ -3,6 +3,7 @@ import Layout from "../layout/Layout";
 import NotFoundPage from "../pages/NotFoundPage";
 import HomePage from "../pages/HomePage"
 import SignInPage from "../pages/Sign-InPage";
+import BasketPage from "../pages/Basket/BasketPage";
 
 export const router = createBrowserRouter([{
     path:"/",
@@ -16,6 +17,10 @@ export const router = createBrowserRouter([{
         {
             path:"/sign-in",
             element:<SignInPage/>
+        },
+        {
+            path:"/basket",
+            element:<BasketPage/>
         }
     ]
 }])

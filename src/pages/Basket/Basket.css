@@ -1,0 +1,1183 @@
+.container {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    width: 100%;
+    margin-left: 160px;
+}
+
+.container h1 {
+    width: 1440px;
+    height: 37px;
+    top: 285px;
+    left: 605px;
+    gap: 0px;
+    opacity: 0px;
+    font-family: Montserrat;
+    font-size: 30px;
+    font-weight: 600;
+    line-height: 36.57px;
+    margin-left: 530px;
+}
+
+.value {
+    width: 670px;
+    top: 383px;
+    left: 135px;
+    gap: 0px;
+    border-radius: 5px;
+    border: 1px solid rgba(41, 41, 41, 0.1);
+    background: rgba(255, 255, 255, 1);
+    margin-bottom: 20px;
+}
+
+.box {
+    display: flex;
+    padding: 10px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+}
+
+.box img {
+    width: 80px;
+    height: 80px;
+}
+
+.imeg {
+    margin-top: 30px;
+}
+
+.texts {
+    padding-left: 10px;
+}
+
+.texts h2 {
+    font-family: Montserrat;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 17.07px;
+    text-align: left;
+}
+
+.texts p {
+    font-family: Proxima Nova;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 14.62px;
+    text-align: left;
+    opacity: 0.7;
+}
+
+.redText {
+    color: red;
+    white-space: nowrap;
+
+}
+
+.miniBox {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-left: 25px;
+}
+
+.miniBox3 {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-left: 50px;
+}
+
+.miniBox3 button {
+    width: 20px;
+    height: 20px;
+    border-radius: 3px;
+    border: 1px solid rgba(41, 41, 41, 0.1);
+}
+
+.miniBox button {
+    width: 20px;
+    height: 20px;
+    border-radius: 3px;
+    border: 1px solid rgba(41, 41, 41, 0.1);
+}
+
+.miniBox2 {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-left: 80px;
+}
+
+.miniBox2 button {
+    width: 20px;
+    height: 20px;
+    border-radius: 3px;
+    border: 1px solid rgba(41, 41, 41, 0.1);
+}
+
+.priceBox {
+    margin-top: 40px;
+    margin-left: 80px;
+}
+
+.priceBox p {
+    font-family: Montserrat;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 17.07px;
+    text-align: left;
+    white-space: nowrap;
+}
+
+.priceBoxx {
+    margin-top: 60px;
+    margin-left: 80px;
+}
+
+.priceBoxx p {
+    font-family: Montserrat;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 17.07px;
+    text-align: left;
+    white-space: nowrap;
+
+}
+
+
+
+.del {
+    width: 12px;
+    height: 12px;
+    top: 397px;
+    left: 782px;
+    gap: 0px;
+    opacity: 0.2px;
+    font-size: 5px;
+    margin-left: 90px;
+}
+
+.dell {
+    width: 12px;
+    height: 12px;
+    top: 397px;
+    left: 782px;
+    gap: 0px;
+    opacity: 0.2px;
+    font-size: 5px;
+    margin-left: 110px;
+    margin-top: -20px;
+}
+
+.highlight-price {
+    color: red;
+}
+
+hr {
+    margin: 20px 0;
+}
+
+.textH2 {
+    margin-top: 30px;
+    white-space: nowrap;
+}
+
+
+
+.additi {
+    width: 660px;
+    height: 220px;
+    top: 936px;
+    left: 135px;
+    gap: 0px;
+    border-radius: 5px;
+    border: 1px 0px 0px 0px;
+    opacity: 0px;
+    border: 1px solid rgba(237, 237, 240, 1);
+    margin-top: 20px;
+    padding-left: 10px;
+}
+
+.addBox {
+    display: flex;
+}
+
+
+.addBox img {
+    width: 80px;
+    height: 80px;
+    margin-top: 15px;
+}
+
+.textH3 {
+    font-family: Montserrat;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 17.07px;
+    margin-top: 50px;
+    padding-left: 10px;
+}
+
+.boxMini {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding-left: 120px;
+    margin-top: 10px;
+}
+
+.boxMini button {
+    width: 20px;
+    height: 20px;
+    border-radius: 3px;
+    border: 1px solid rgba(41, 41, 41, 0.1);
+}
+
+.boxMini2 {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding-left: 25px;
+    margin-top: 10px;
+
+}
+
+.boxMini2 button {
+    width: 20px;
+    height: 20px;
+    border-radius: 3px;
+    border: 1px solid rgba(41, 41, 41, 0.1);
+}
+
+.hr2 {
+    margin: -2px;
+}
+
+.priceBox2 {
+    margin-top: 30px;
+    margin-left: 80px;
+}
+
+.priceBox2 p {
+    font-family: Montserrat;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 17.07px;
+    text-align: left;
+    white-space: nowrap;
+}
+
+.second {
+    width: 650px;
+}
+
+.second h2 {
+    height: 37px;
+    top: 1196px;
+    left: 331px;
+    gap: 0px;
+    opacity: 0px;
+    font-family: Montserrat;
+    font-size: 30px;
+    font-weight: 600;
+    line-height: 36.57px;
+    text-align: center;
+}
+
+.second p {
+    width: 670px;
+    height: 18px;
+    top: 1240px;
+    left: 135px;
+    gap: 0px;
+    opacity: 0.7px;
+    font-family: Proxima Nova;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 22px;
+    text-align: center;
+    color: rgba(41, 41, 41, 1);
+}
+
+.oneInputs {
+    display: flex;
+}
+
+.oneInputs input {
+    width: 328px;
+    height: 50px;
+    top: 1316px;
+    left: 135px;
+    gap: 0px;
+    border: 1px 0px 0px 0px;
+    opacity: 0px;
+    background: rgba(255, 255, 255, 1);
+    border: 1px solid rgba(237, 237, 240, 1);
+}
+
+.firstInput {
+    width: 670px;
+}
+
+.firstInput p {
+    width: 222px;
+    height: 17px;
+    top: 1293px;
+    left: 135px;
+    gap: 0px;
+    opacity: 0px;
+    font-family: Proxima Nova;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 17.05px;
+    text-align: left;
+    color: rgba(41, 41, 41, 1);
+}
+
+.secondInput {
+    width: 670px;
+    margin-left: 10px;
+}
+
+.secondInput p {
+    width: 222px;
+    height: 17px;
+    top: 1293px;
+    left: 135px;
+    gap: 0px;
+    opacity: 0px;
+    font-family: Proxima Nova;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 17.05px;
+    text-align: left;
+    color: rgba(41, 41, 41, 1);
+}
+
+.secondCon p {
+    width: 222px;
+    height: 17px;
+    top: 1390px;
+    left: 135px;
+    gap: 0px;
+    opacity: 0px;
+    font-family: Proxima Nova;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 17.05px;
+    text-align: left;
+    margin-top: 20px;
+}
+
+.secondMiddle {
+    display: flex;
+    margin-left: 30px;
+}
+
+.textSecond {
+    margin-left: 50px;
+}
+
+.curer {
+    width: 328px;
+    height: 78px;
+    top: 1418px;
+    left: 135px;
+    gap: 0px;
+    border-radius: 5px 0px 0px 0px;
+    border: 1px 0px 0px 0px;
+    opacity: 0px;
+    display: flex;
+    background: rgba(255, 255, 255, 1);
+    border: 1px solid rgba(237, 237, 240, 1);
+}
+
+
+.person {
+    width: 328px;
+    height: 78px;
+    top: 1418px;
+    left: 135px;
+    gap: 0px;
+    border-radius: 5px 0px 0px 0px;
+    border: 1px 0px 0px 0px;
+    opacity: 0px;
+    display: flex;
+    border-radius: 5px;
+    background: rgba(255, 255, 255, 1);
+    border: 1px solid rgba(237, 237, 240, 1);
+    margin-left: 30px;
+}
+
+.textSecond p {
+    width: 160px;
+    height: 17px;
+    top: 1438px;
+    left: 220px;
+    gap: 90px;
+    opacity: 0px;
+    font-family: Montserrat;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 17.07px;
+    text-align: left;
+    margin-top: 20px;
+    white-space: nowrap;
+    margin-left: -30px;
+}
+
+.secondMiddle img {
+    width: 54px;
+    height: 54px;
+    top: 1430px;
+    left: 152px;
+    gap: 0px;
+    opacity: 0px;
+    margin-top: 10px;
+    margin-left: 10px;
+}
+
+.highlight-text {
+    color: rgba(231, 66, 106, 1);
+}
+
+.thithInput {
+    width: 670px;
+    margin-top: 20px;
+}
+
+.thithInput p {
+    width: 222px;
+    height: 17px;
+    top: 1520px;
+    left: 135px;
+    gap: 0px;
+    opacity: 0px;
+    font-family: Proxima Nova;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 17.05px;
+    text-align: left;
+}
+
+.thithInput input {
+    width: 670px;
+    height: 76px;
+    top: 1546px;
+    left: 135px;
+    gap: 0px;
+    border: 1px 0px 0px 0px;
+    opacity: 0px;
+    border: 1px solid rgba(237, 237, 240, 1);
+}
+
+.fourInput {
+    width: 670px;
+    margin-top: 20px;
+    display: flex;
+}
+
+.fourInput p {
+    width: 222px;
+    height: 17px;
+    top: 1646px;
+    left: 135px;
+    gap: 0px;
+    opacity: 0px;
+    font-family: Proxima Nova;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 17.05px;
+    text-align: left;
+
+}
+
+.fourInput input {
+    width: 328px;
+    height: 50px;
+    top: 1669px;
+    left: 135px;
+    gap: 0px;
+    border: 1px 0px 0px 0px;
+    opacity: 0px;
+    border: 1px solid rgba(237, 237, 240, 1);
+}
+
+.clock {
+    margin-left: 10px;
+}
+
+.fiveInput {
+    width: 670px;
+    margin-top: 20px;
+}
+
+.fiveInput p {
+    width: 222px;
+    height: 17px;
+    top: 1743px;
+    left: 135px;
+    gap: 0px;
+    opacity: 0px;
+    font-family: Proxima Nova;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 17.05px;
+    text-align: left;
+}
+
+.fiveInput input {
+    width: 670px;
+    height: 108px;
+    top: 1769px;
+    left: 135px;
+    gap: 0px;
+    border: 1px 0px 0px 0px;
+    opacity: 0px;
+    border: 1px solid rgba(237, 237, 240, 1)
+}
+
+.sixInput {
+    width: 670px;
+}
+
+
+.sixInput p {
+    width: 222px;
+    height: 17px;
+    top: 1901px;
+    left: 135px;
+    gap: 0px;
+    opacity: 0px;
+    font-family: Proxima Nova;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 17.05px;
+    text-align: left;
+}
+
+.checkboxs {
+    display: flex;
+}
+
+.priceCheck {
+    display: flex;
+    width: 670px;
+    white-space: nowrap;
+
+}
+
+.piCheck {
+    width: 551px;
+    height: 22px;
+    top: 1999px;
+    left: 137px;
+    gap: 0px;
+    opacity: 0px;
+    font-family: Proxima Nova;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 22px;
+    text-align: left;
+}
+
+.highlight-check {
+    width: 103px;
+    height: 22px;
+    top: 1999px;
+    left: 702px;
+    gap: 0px;
+    opacity: 0px;
+    font-family: Montserrat;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 21.94px;
+    text-align: right;
+    color: #e7426a;
+    margin-left: 23rem;
+    margin-top: 10px;
+}
+
+.sixInput button {
+    width: 254px;
+    height: 50px;
+    top: 2071px;
+    left: 343px;
+    gap: 0px;
+    border-radius: 3px;
+    opacity: 0px;
+    background: rgba(231, 66, 106, 1);
+    color: aliceblue;
+    border: none;
+    margin-left: 13rem;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.bott {
+    width: 670px;
+    height: 26px;
+    top: 2139px;
+    left: 135px;
+    gap: 0px;
+    opacity: 0.8px;
+    font-family: Proxima Nova;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 13.4px;
+    text-align: left;
+    white-space: nowrap;
+    color: rgb(117, 95, 95);
+}
+
+section {
+    display: flex;
+    gap: 40px;
+}
+
+.leftCon {
+    width: 473px;
+    height: 369px;
+    top: 383px;
+    left: 835px;
+    gap: 0px;
+    border-radius: 5px 0px 0px 0px;
+    border: 1px 0px 0px 0px;
+    opacity: 0px;
+    border: 1px solid rgba(237, 237, 240, 1)
+}
+
+
+
+.itog h2 {
+    margin-left: 30px;
+    width: 93px;
+    height: 22px;
+    top: 412px;
+    left: 865px;
+    gap: 0px;
+    opacity: 0px;
+    font-family: Montserrat;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 21.94px;
+    text-align: left;
+}
+
+.textItog {
+    display: flex;
+    color: rgba(41, 41, 41, 1);
+    margin-left: 30px;
+}
+
+.textItog p {
+    width: 229px;
+    height: 74px;
+    top: 444px;
+    left: 865px;
+    gap: 0px;
+    opacity: 0.8px;
+    font-family: Proxima Nova;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 22px;
+    text-align: left;
+    margin-top: 0px;
+
+}
+
+.textItog span {
+    width: 61px;
+    height: 55px;
+    top: 444px;
+    left: 1216px;
+    gap: 0px;
+    opacity: 0.8px;
+    font-family: Proxima Nova;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 22px;
+    text-align: right;
+    margin-left: 8rem;
+}
+
+.itog hr {
+    margin-right: 70px;
+    width: 470px;
+    margin-bottom: 3px;
+    margin-top: 3px;
+}
+
+.priceItog {
+    display: flex;
+    margin-left: 30px;
+}
+
+.priceItog p {
+    width: 229px;
+    height: 20px;
+    top: 554px;
+    left: 865px;
+    gap: 0px;
+    opacity: 0.8px;
+    font-family: Proxima Nova;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 22px;
+    text-align: left;
+    color: rgba(41, 41, 41, 1);
+}
+
+.priceItog span {
+    width: 93px;
+    height: 22px;
+    top: 553px;
+    left: 1183px;
+    gap: 0px;
+    opacity: 0px;
+    font-family: Montserrat;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 21.94px;
+    text-align: right;
+    color: rgba(41, 41, 41, 1);
+    margin-top: 15px;
+    margin-left: 6rem;
+}
+
+.inp {
+    display: flex;
+    margin-left: 30px;
+    margin-top: 20px;
+}
+
+.inp p {
+    width: 84px;
+    height: 20px;
+    top: 623px;
+    left: 865px;
+    gap: 0px;
+    opacity: 0.8px;
+    font-family: Proxima Nova;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 22px;
+    text-align: left;
+    color: rgba(41, 41, 41, 1);
+}
+
+.inp input {
+    width: 315px;
+    height: 37px;
+    top: 611px;
+    left: 962px;
+    gap: 0px;
+    border: 1px 0px 0px 0px;
+    opacity: 0px;
+    border: 1px solid rgba(237, 237, 240, 1);
+    margin-left: 20px;
+    margin-top: 5px;
+    padding-left: 8px;
+    color: rgba(41, 41, 41, 1);
+}
+
+.inp button {
+    width: 150px;
+    height: 40px;
+    top: 611px;
+    left: 1159px;
+    gap: 0px;
+    opacity: 0px;
+    background: rgba(231, 66, 106, 1);
+    color: aliceblue;
+    border-radius: 1px 0px 0px 0px;
+    border: none;
+    margin-top: 5px;
+    margin-right: 25px;
+}
+
+.itogButton {
+    width: 254px;
+    height: 50px;
+    top: 671px;
+    left: 945px;
+    gap: 0px;
+    border-radius: 3px 0px 0px 0px;
+    opacity: 0px;
+    background: rgba(231, 66, 106, 1);
+    border: none;
+    color: aliceblue;
+    margin-left: 7rem;
+    margin-top: 15px;
+}
+
+.bottomCon {
+    width: 1440px;
+}
+
+.bottomCon h1{
+    margin-left: 480px;
+}
+
+.category {
+    display: flex;
+    gap: 30px;
+}
+
+.category img {
+    z-index: 2;
+}
+
+.one {
+    width: 271px;
+    height: 413px;
+    top: 2281px;
+    left: 134px;
+    gap: 0px;
+    border-radius: 5px 0px 0px 0px;
+    border: 1px 0px 0px 0px;
+    opacity: 0px;
+    background: rgb(255, 255, 255);
+    border: 1px solid rgba(237, 237, 240, 1);
+
+}
+
+.oneP {
+    width: 235px;
+    height: 19px;
+    top: 2523px;
+    left: 155px;
+    gap: 0px;
+    opacity: 0px;
+    font-family: Montserrat;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 21.94px;
+    text-align: left;
+    color: rgba(41, 41, 41, 1);
+    margin-left: 20px;
+}
+
+.onePi {
+    width: 232px;
+    height: 60px;
+    top: 2552px;
+    left: 155px;
+    gap: 0px;
+    opacity: 0.8px;
+    font-family: Proxima Nova;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 17.05px;
+    text-align: left;
+    color: rgba(41, 41, 41, 1);
+    margin-left: 20px;
+}
+
+.one hr {
+    margin-top: -20px;
+}
+
+.vertical-line {
+    width: 1px;
+    height: 79px;
+    background-color: rgb(179, 174, 174);
+    margin: 0 10px;
+    margin-left: 3rem;
+}
+
+.oneButton {
+    display: flex;
+    margin-left: 20px;
+    margin-top: -20px;
+    padding-left: 40px;
+}
+
+.oneButton p {
+    width: 55px;
+    height: 17px;
+    top: 2636px;
+    left: 148px;
+    gap: 0px;
+    opacity: 0px;
+    font-family: Montserrat;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 17.07px;
+    color: rgba(150, 150, 150, 1);
+    margin-left: -2rem;
+}
+
+.oneButton span {
+    width: 64px;
+    height: 22px;
+    top: 2659px;
+    left: 148px;
+    gap: 0px;
+    opacity: 0px;
+    font-family: Montserrat;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 21.94px;
+    text-align: left;
+    color: rgba(231, 66, 106, 1);
+}
+
+.oneButton button {
+    width: 102px;
+    height: 19px;
+    top: 2648px;
+    left: 285px;
+    gap: 0px;
+    opacity: 0px;
+    border: none;
+    background: none;
+    margin-top: 20px;
+    font-family: Montserrat;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 17.07px;
+    color: rgba(0, 0, 0, 0.88);
+    text-align: right;
+}
+
+.spanButton {
+    font-family: Montserrat;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 21.94px;
+    margin-left: -2rem;
+    margin-top: 30px;
+    white-space: nowrap;
+}
+
+.two h2 {
+    width: 235px;
+    height: 19px;
+    top: 2523px;
+    left: 456px;
+    gap: 0px;
+    opacity: 0px;
+    color: rgba(41, 41, 41, 1);
+    font-family: Montserrat;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 21.94px;
+    text-align: left;
+
+}
+
+.three h2 {
+    width: 235px;
+    height: 19px;
+    top: 2523px;
+    left: 456px;
+    gap: 0px;
+    opacity: 0px;
+    color: rgba(41, 41, 41, 1);
+    font-family: Montserrat;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 21.94px;
+    text-align: left;
+
+}
+
+.four h2 {
+    width: 235px;
+    height: 19px;
+    top: 2523px;
+    left: 456px;
+    gap: 0px;
+    opacity: 0px;
+    color: rgba(41, 41, 41, 1);
+    font-family: Montserrat;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 21.94px;
+    text-align: left;
+}
+
+.two p {
+    width: 232px;
+    height: 90px;
+    top: 2552px;
+    left: 456px;
+    gap: 0px;
+    opacity: 0.8px;
+    font-family: Proxima Nova;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 17.05px;
+    text-align: left;
+    color: rgba(41, 41, 41, 1);
+}
+
+.three p {
+    width: 232px;
+    height: 90px;
+    top: 2552px;
+    left: 456px;
+    gap: 0px;
+    opacity: 0.8px;
+    font-family: Proxima Nova;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 17.05px;
+    text-align: left;
+    color: rgba(41, 41, 41, 1);
+}
+
+.four p {
+    width: 232px;
+    height: 90px;
+    top: 2552px;
+    left: 456px;
+    gap: 0px;
+    opacity: 0.8px;
+    font-family: Proxima Nova;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 17.05px;
+    text-align: left;
+    color: rgba(41, 41, 41, 1);
+}
+
+.two {
+    width: 271px;
+    height: 413px;
+    top: 2281px;
+    left: 134px;
+    gap: 0px;
+    border-radius: 5px 0px 0px 0px;
+    border: 1px 0px 0px 0px;
+    opacity: 0px;
+    background: rgb(255, 255, 255);
+    border: 1px solid rgba(237, 237, 240, 1);
+}
+
+.three {
+    width: 271px;
+    height: 413px;
+    top: 2281px;
+    left: 134px;
+    gap: 0px;
+    border-radius: 5px 0px 0px 0px;
+    border: 1px 0px 0px 0px;
+    opacity: 0px;
+    background: rgb(255, 255, 255);
+    border: 1px solid rgba(237, 237, 240, 1);
+
+}
+
+.four {
+    width: 271px;
+    height: 413px;
+    top: 2281px;
+    left: 134px;
+    gap: 0px;
+    border-radius: 5px 0px 0px 0px;
+    border: 1px 0px 0px 0px;
+    opacity: 0px;
+    background: rgb(255, 255, 255);
+    border: 1px solid rgba(237, 237, 240, 1);
+
+}
+
+.oneButton2 {
+    display: flex;
+    margin-left: 20px;
+    margin-top: -20px;
+    padding-left: 40px;
+}
+
+.oneButton2 p {
+    width: 55px;
+    height: 17px;
+    top: 2636px;
+    left: 148px;
+    gap: 0px;
+    opacity: 0px;
+    font-family: Montserrat;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 17.07px;
+    color: rgba(150, 150, 150, 1);
+    margin-left: -2rem;
+}
+
+.oneButton2 span {
+    width: 64px;
+    height: 22px;
+    top: 2659px;
+    left: 148px;
+    gap: 0px;
+    opacity: 0px;
+    font-family: Montserrat;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 21.94px;
+    text-align: left;
+    color: rgba(231, 66, 106, 1);
+}
+
+.oneButton2 button {
+    width: 102px;
+    height: 19px;
+    top: 2648px;
+    left: 285px;
+    gap: 0px;
+    opacity: 0px;
+    border: none;
+    background: none;
+    margin-top: 20px;
+    font-family: Montserrat;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 17.07px;
+    color: rgba(0, 0, 0, 0.88);
+    text-align: right;
+}
+
+.two hr {
+    margin-top: -43px;
+}
+
+.three hr {
+    margin-top: -43px;
+}
+
+.four hr {
+    margin-top: -43px;
+}
+
+.left {
+    margin-left: 20px;
+}
+
+.gis {
+    width: 50px;
+    height: 50px;
+    top: 2359px;
+    left: 110px;
+    gap: 0px;
+    opacity: 0px;
+    z-index: 1;
+    position: absolute;
+    margin-top: -170px;
+    margin-left: 32px;
+}
+
+.gisTo {
+    width: 50px;
+    height: 50px;
+    top: 2359px;
+    left: 110px;
+    gap: 0px;
+    opacity: 0px;
+    z-index: 1;
+    position: absolute;
+    margin-top: -170px;
+    margin-left: 1212px;
+}
