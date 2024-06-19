@@ -36,11 +36,16 @@ function Profile() {
               placeholder="номер вашего сотового телефона"
               required
             />
-            <label for="myfile">Выберите файл:</label>
-            <input  type="file" id="myfile" name="myfile"></input>
-            <Link to="/">
-            <button>готово</button>
-            </Link>
+           <div className="input__profile-wrapper">
+      <label className="input__profile-label" htmlFor="myfile">Выберите файл:</label>
+      <input className="input__profile" type="file" id="myfile" name="myfile" />
+      <label htmlFor="myfile" className="custom-file-upload">
+        Выбрать файл
+      </label>
+      <Link to="/">
+        <button className="btn_2">Готово</button>
+      </Link>
+    </div>
           </div>
         </div>
       </div>

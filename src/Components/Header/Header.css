@@ -120,3 +120,7 @@ a:hover {
     letter-spacing: 2%;
     text-align: center;
 }
+.avatar {
+    width: 35px;
+    height: 35px;
+}

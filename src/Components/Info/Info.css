@@ -5,8 +5,9 @@
 .info-content{
     display: flex;
     justify-content: space-between;
+    align-items: center;
     gap: 40px;
-    
+    width: 100%;
 }
 .info-conteny-text h2{
 
@@ -30,12 +31,13 @@ color: #292929;
 .info-content-text-count{
     background: #FFFFFF;
     border: 1px solid #EDEDF0;
-    padding: 10px 27px 24px 28px;
+    padding: 10px 87px 24px 8px;
     border-radius: 5px;
+    width:50vh
 }
 .info-content-text-count h4{
  
-font-size: 20px;
+font-size: 20px;    
 font-weight: 600;
 line-height: 21.94px;
 text-align: left;
@@ -43,20 +45,13 @@ color: #292929;
 
 }
 .info-content-text-count-in{
-font-size: 16px;
-font-weight: 400;
-line-height: 22px;
-text-align: left;
-color: #292929;
-
-}
-.info-content-text-count-in{
+    width: 570px;
+    height: 156px;
     display: flex;
+    flex-direction: column;
     align-items: center;
-    justify-content: space-between;
-    gap: 440px;
+    justify-content: space-betwen;
     margin-top: -10px;
-    
 
 }
 .info-content-text-price{
@@ -97,15 +92,19 @@ color: #E7426A;
     height: 19px;
     max-width: 100%;
 }
+.info-content-img{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
 .info-content-img-in {
     display: flex;
     gap: 7px;
-    margin-top: 14px;
-    
-    
+    margin-top: 14px;   
 }
 .info-content-img-in img{
     border-radius: 8px;
+    display: flex;
     gap: 10px;
     width: 71.25px;
     height: 81.25px;
@@ -115,8 +114,6 @@ color: #E7426A;
     display: flex;
     align-items: center;
     gap: 27px;
-
-
 }
 .info-content-text-cards-2{
     display: flex;
@@ -134,4 +131,28 @@ color: #E7426A;
 .info-des{
     margin-top: 40px;
 }
+.main-image{
+    width:570px ;
+    height:450px ;
+}
 
+.main-imgs{
+    width: 71px;
+    height: 71px;
+}
+.quantity{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 55vh;
+}
+.quantity-text{
+    color: rgb(41, 41, 41);
+    font-family: Proxima Nova;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 22px;
+    letter-spacing: 0%;
+    text-align: left;
+
+}

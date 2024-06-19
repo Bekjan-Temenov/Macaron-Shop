@@ -9,7 +9,8 @@ import ForgotPages from "../pages/ForgotPages";
 import ForgotComPages from "../pages/ForgotComPages";
 import ProfilePages from "../pages/ProfilePages";
 import PhotoPages from "../pages/PhotoPages";
-
+import InfoPages from "../pages/InfoPages";
+import OnenewsPages from "../pages/OnenewsPages";
 
 
 export const router = createBrowserRouter([
@@ -49,6 +50,14 @@ export const router = createBrowserRouter([
             {
                 path: "/Photo",
                 element: <PhotoPages />,
+            },
+            {
+                path:"/info/:id",
+                element:<InfoPages/>
+            },
+            {
+                path:"Onenews",
+                element:<OnenewsPages/>
             },
         ],
     },

@@ -3,7 +3,7 @@
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     overflow: hidden;
     width: 971px;
-    height: 792px;
+    height: 992px;
     box-sizing: border-box;
     border: 1px solid rgb(237, 237, 240);
     background: rgb(247, 235, 229);
@@ -72,7 +72,7 @@
     text-align: left;
     margin: 0;
   }
-  button {
+  .btn {
     width: 86%;
     padding: 15px;
     background-color: #e91e63;
@@ -82,10 +82,9 @@
     font-size: 16px;
     cursor: pointer;
     margin-left:7%
-
   }
   
-  button:hover {
+  .btn:hover {
     background-color: #d81b60;
   }
   

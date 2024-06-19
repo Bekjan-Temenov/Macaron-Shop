@@ -27,9 +27,6 @@ const App = () => (
         slidesPerView={1}
         spaceBetween={30}
         loop={true}
-        navigation={true}
-        pagination={{ clickable: true }}
-        style={{ "--swiper-navigation-size": "15px" }}
         autoplay={{
             delay: 3000,
             disableOnInteraction: false,
