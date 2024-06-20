@@ -6,6 +6,7 @@ import card from "../../assets/bekjan/svg/card.svg"
 import telegram from "../../assets/bekjan/svg/telegram.svg"
 import wkontakt from "../../assets/bekjan/svg/wkontakt.svg"
 import odnaklass from "../../assets/bekjan/svg/odnaklass.svg"
+import { RxAvatar } from "react-icons/rx";
 import "./Header.css"
 
 function HeaderStart() {
@@ -16,7 +17,7 @@ function HeaderStart() {
           <Link to="/no-page">
             <p>Гарантия свежести </p>
           </Link>
-          <Link to="/no-page">
+          <Link to="/deliv">
             <p>Доставка и оплата  </p>
           </Link>
           <Link to="/no-page">
@@ -39,7 +40,9 @@ function HeaderStart() {
             <p>8 812 309-82-88</p>
           </div>
           <div className="phone">
-            <img className="img" src={card} alt="img" />
+            <Link to="/basket">
+              <img className="img" src={card} alt="img" />
+            </Link>
             <p>В корзине (4 товара)</p>
           </div>
           <div className="logos">
@@ -53,6 +56,9 @@ function HeaderStart() {
               <img className="img" src={odnaklass} alt="img" />
             </Link>
           </div>
+          <Link to="sign-up">
+            <RxAvatar className="avatar" />
+          </Link>
         </div>
       </Container>
     </div>

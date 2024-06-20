@@ -7,6 +7,7 @@ import facebook from "../../assets/bekjan/svg/facebook.svg"
 import vk from "../../assets/bekjan/svg/wkont.svg"
 import "./Footer.css"
 
+
 function Footer() {
   return (
     <div className="container">
@@ -81,5 +82,4 @@ function Footer() {
     </div>
   );
 }
-
 export default Footer;

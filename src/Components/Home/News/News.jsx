@@ -58,7 +58,7 @@ export default function News() {
                         </SwiperSlide>
                     ))}
                     <button className="nabor">
-                        Все праздничные наборы
+                        Все новости
                     </button>
                 </Swiper>   
             </div>
