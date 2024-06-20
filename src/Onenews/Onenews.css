@@ -155,7 +155,7 @@ body {
     background-color: #f8f8f8;
   }
   
-  button {
+  .btn1 {
     padding: 15px 30px;
     background-color: #d9534f;
     color: white;
@@ -166,7 +166,7 @@ body {
     align-self: flex-end;
   }
   
-  button:hover {
+  .btn1:hover {
     background-color: #ee8d8a;
   }
   

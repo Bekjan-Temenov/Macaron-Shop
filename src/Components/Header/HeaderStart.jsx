@@ -50,11 +50,9 @@ function HeaderStart() {
               <img className="img" src={telegram} alt="img" />
             </Link>
             <Link to="/no-page">
-
               <img className="img" src={wkontakt} alt="img" />
             </Link>
             <Link to="/no-page">
-
               <img className="img" src={odnaklass} alt="img" />
             </Link>
           </div>

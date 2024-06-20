@@ -67,9 +67,10 @@ import { Container } from "../../Container/Container";
 import { Link } from "react-router-dom";
 import { useDispatch } from "react-redux";
 import { addToCart } from "../cart";
+import { motion } from "framer-motion";
 import card from "../../../assets/bekjan/svg/cards.svg";
-import "./Producs.css";
 import productData from "../../api/api";
+import "./Producs.css";
 
 const Producs = () => {
     const dispatch = useDispatch()
@@ -79,16 +80,35 @@ const Producs = () => {
         console.log(addCart)
         alert("добавлено")
     }
+    const animation = {
+        hidden: {
+            y: 60,
+            opacity: 0,
+        },
+        visible: custom => ({
+            y: 0,
+            opacity: 1,
+            transition: {
+                delay: custom * 0.1,
+                duration: 0.4,
+                ease: 'easeInOut'
+            }
+        })
+    }
     return (
         <Container>
-            <div className="display">
-                <h1 className="h1">Популярные наборы</h1>
+            <motion.div
+                initial="hidden"
+                whileInView="visible"
+                viewport={{ amount: 0.1, once: true }}
+                className="display">
+                <motion.h1 variants={animation} custom={1} className="h1">Популярные наборы</motion.h1>
                 <div className="products">
                     {
                         productData.map((product, index) => (
-                            <div key={index} className="producter">
+                            <motion.div variants={animation} custom={index} key={index} className="producter">
                                 <Link to={`/info/${product.id}`}>
-                                    <img className="img-product" src={product.img} alt={product.name} />
+                                    <motion.img whileHover={{ scale: 1.1 }} className="img-product" src={product.img} alt={product.name} />
                                 </Link>
                                 <div className="infos">
                                     <div className="texts">
@@ -96,24 +116,20 @@ const Producs = () => {
                                         <p>{product.description}</p>
                                     </div>
                                     <div className="price">
-                                        <p>{product.price}</p>
+                                        <p>{product.price} руб</p>
                                         <button
                                             onClick={() => addCart(product)}
                                             className="product-btn">
-
                                             <img
                                                 className="product-cart" src={card} alt="Корзина" />
                                             В корзину
                                         </button>
                                     </div>
                                 </div>
-                            </div>
+                            </motion.div>
                         ))}
-                </div>
-                <button className="nabor">
-                    Все праздничные наборы
-                </button>
-            </div>
+                </div>  
+            </motion.div>
         </Container>
     );
 };

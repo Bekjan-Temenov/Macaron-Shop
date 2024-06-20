@@ -76,7 +76,7 @@ const onenews = () => {
             <label htmlFor="comments">Добавить комментарий</label>
             <input type="text" id="comments" name="comments" placeholder="Добавить комментарий" />
           </div>
-          <button type="submit">Заказать расчёт</button>
+          <button className='btn1' type="submit">Заказать расчёт</button>
         </form>
       </section>
 
