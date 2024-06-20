@@ -3,6 +3,7 @@ import { Container } from '../../Container/Container';
 import product from "../../../assets/bekjan/svg/news.svg";
 import product2 from "../../../assets/bekjan/svg/news1.svg";
 import product3 from "../../../assets/bekjan/svg/news2.svg";
+import { motion } from 'framer-motion';
 
 import 'swiper/css';
 import 'swiper/css/free-mode';
@@ -34,12 +35,32 @@ export default function News() {
         { image: product3, date: '17.02.2023', text: "Скоро главный праздник весны!", note: "Девушки любят, когда вкусно, красиво и натурально. Смотрите больше наборов с десертами ручной работы" },
     ];
 
+    const animation = {
+        hidden: {
+            y: 60,
+            opacity: 0,
+        },
+        visible: custom => ({
+            y: 0,
+            opacity: 1,
+            transition: {
+                delay: custom * 0.3,
+                duration: 0.5,
+                ease: 'easeInOut'
+            }
+        })
+    }
     return (
         <Container>
-            <div className='news-carusel'>
-                <div className='news-text-sale'>
+            <motion.div
+                initial="hidden"
+                whileInView="visible"
+                className='news-carusel'
+                viewport={{ amount: 0.3, once: true }}>
+
+                <motion.div variants={animation} custom={1} className='news-text-sale'>
                     Новости
-                </div>
+                </motion.div>
                 <Swiper
                     slidesPerView={3}
                     spaceBetween={30}
@@ -54,14 +75,16 @@ export default function News() {
                 >
                     {slides.map((slide, index) => (
                         <SwiperSlide key={index}>
-                            <Slide image={slide.image} date={slide.date} text={slide.text} note={slide.note} />
+                            <motion.div variants={animation} custom={index}>
+                                <Slide image={slide.image} date={slide.date} text={slide.text} note={slide.note} />
+                            </motion.div>
                         </SwiperSlide>
                     ))}
                     <button className="nabor">
                         Все новости
                     </button>
-                </Swiper>   
-            </div>
+                </Swiper>
+            </motion.div>
         </Container >
     );
 }

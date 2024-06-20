@@ -37,11 +37,13 @@ function Sets() {
                     <div className="circle">
                         <img src={logo} alt="img" />
                     </div>
-                    <div className="arrow">
-                        <h1>Готовые наборы</h1>
-                        <img src={arrow} alt="img" />
+                    <div className="sets-arow">
+                        <div className="arrow">
+                            <h1>Готовые наборы</h1>
+                            <img src={arrow} alt="img" />
+                        </div>
+                        <p>Готовые наборы со скидкой. Вы можете подобрать набор на подходящий случай.</p>
                     </div>
-                    <p>Готовые наборы со скидкой. Вы можете подобрать набор на подходящий случай.</p>
                 </motion.div>
 
                 <motion.div
