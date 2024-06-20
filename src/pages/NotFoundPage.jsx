@@ -1,4 +1,3 @@
-import NotFound from "../Components/NotFound/NotFound";
 
 
 function NotFoundPage() {

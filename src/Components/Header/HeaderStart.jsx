@@ -17,7 +17,7 @@ function HeaderStart() {
           <Link to="/no-page">
             <p>Гарантия свежести </p>
           </Link>
-          <Link to="/no-page">
+          <Link to="/deliv">
             <p>Доставка и оплата  </p>
           </Link>
           <Link to="/no-page">
@@ -40,7 +40,9 @@ function HeaderStart() {
             <p>8 812 309-82-88</p>
           </div>
           <div className="phone">
-            <img className="img" src={card} alt="img" />
+            <Link to="/basket">
+              <img className="img" src={card} alt="img" />
+            </Link>
             <p>В корзине (4 товара)</p>
           </div>
           <div className="logos">
@@ -57,7 +59,7 @@ function HeaderStart() {
             </Link>
           </div>
           <Link to="sign-up">
-              <RxAvatar className="avatar"/>
+            <RxAvatar className="avatar" />
           </Link>
         </div>
       </Container>

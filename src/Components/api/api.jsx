@@ -2,7 +2,7 @@ const productsData = [
   {
     id: 1,
     name: "Сердце",
-    img: "../../assets/Sherniaz/svg/Rectangle322.svg",
+    img: "https://macaronshop.ru/wp-content/uploads/2023/01/podarok-na-den-rogdeniya-3.png",
     imgs: [
       "../../assets/Sherniaz/svg/Rectangle322.svg",
       "../../assets/Sherniaz/svg/Rectangle322.svg",
@@ -25,7 +25,7 @@ const productsData = [
   {
     id: 2,
     name: "Звезда",
-    img: "../../assets/Sherniaz/svg/Star1.svg",
+    img: "https://macaronshop.ru/wp-content/uploads/2024/05/nabor-macarons-1.png",
     imgs: [
       'https://i5.walmartimages.com/asr/cc4c52b0-60de-4ab9-adb3-9a887d9c98b6.bbed584d3d15ba4574f17b3cbf9f42f5.jpeg',
       'https://i5.walmartimages.com/seo/Seedra-Cilantro-Seeds-for-Planting-Indoor-and-Outdoor-Non-GMO-Heirloom-300-seeds-2-6-g-with-Instructions-1-Pack_b26345e8-70ed-4bb6-ac08-b49504c0ca70.ddd46da1cac90b6147861dde973257a4.jpeg',
@@ -50,7 +50,7 @@ const productsData = [
   {
     id: 3,
     name: "Круг",
-    img: "../../assets/Sherniaz/svg/Circle1.svg",
+    img: "https://macaronshop.ru/wp-content/uploads/2022/10/podarok-na-den-rojdeniya-3.png",
     imgs: [
       "../../assets/Sherniaz/svg/Circle1.svg",
       "../../assets/Sherniaz/svg/Circle2.svg",
@@ -73,7 +73,7 @@ const productsData = [
   {
     id: 4,
     name: "Квадрат",
-    img: "../../assets/Sherniaz/svg/Square1.svg",
+    img: "https://macaronshop.ru/wp-content/uploads/2023/03/deserty-na-zakaz-spb-17.jpg",
     imgs: [
       "../../assets/Sherniaz/svg/Square1.svg",
       "../../assets/Sherniaz/svg/Square2.svg",
@@ -96,7 +96,7 @@ const productsData = [
   {
     id: 5,
     name: "Треугольник",
-    img: "../../assets/Sherniaz/svg/Triangle1.svg",
+    img: "https://macaronshop.ru/wp-content/uploads/2023/03/podarok-na-svadbu-1.jpg",
     imgs: [
       "../../assets/Sherniaz/svg/Triangle1.svg",
       "../../assets/Sherniaz/svg/Triangle2.svg",
@@ -119,7 +119,7 @@ const productsData = [
   {
     id: 6,
     name: "Пятиугольник",
-    img: "../../assets/Sherniaz/svg/Pentagon1.svg",
+    img: "https://macaronshop.ru/wp-content/uploads/2024/04/sladkie-podarki-4.png",
     imgs: [
       "../../assets/Sherniaz/svg/Pentagon1.svg",
       "../../assets/Sherniaz/svg/Pentagon2.svg",

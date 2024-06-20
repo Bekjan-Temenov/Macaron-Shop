@@ -64,12 +64,21 @@
 
 // export default Producs;
 import { Container } from "../../Container/Container";
+import { Link } from "react-router-dom";
+import { useDispatch } from "react-redux";
+import { addToCart } from "../cart";
 import card from "../../../assets/bekjan/svg/cards.svg";
 import "./Producs.css";
-import { Link } from "react-router-dom";
 import productData from "../../api/api";
 
 const Producs = () => {
+    const dispatch = useDispatch()
+
+    const addCart = (item) => {
+        dispatch(addToCart(item))
+        console.log(addCart)
+        alert("добавлено")
+    }
     return (
         <Container>
             <div className="display">
@@ -79,7 +88,7 @@ const Producs = () => {
                         productData.map((product, index) => (
                             <div key={index} className="producter">
                                 <Link to={`/info/${product.id}`}>
-                                    <img className="img-product" src={product.image} alt={product.name} />
+                                    <img className="img-product" src={product.img} alt={product.name} />
                                 </Link>
                                 <div className="infos">
                                     <div className="texts">
@@ -88,8 +97,12 @@ const Producs = () => {
                                     </div>
                                     <div className="price">
                                         <p>{product.price}</p>
-                                        <button className="product-btn">
-                                            <img className="product-cart" src={card} alt="Корзина" />
+                                        <button
+                                            onClick={() => addCart(product)}
+                                            className="product-btn">
+
+                                            <img
+                                                className="product-cart" src={card} alt="Корзина" />
                                             В корзину
                                         </button>
                                     </div>
