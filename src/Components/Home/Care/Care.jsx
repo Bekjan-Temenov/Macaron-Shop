@@ -56,7 +56,7 @@ const Producs = () => {
                 <div className="care-products">
                     {productData.map((product, index) => (
                         <motion.div
-                        variants={animation} custom={index}
+                            variants={animation} custom={index}
                             key={index} className="care-producter">
                             <img className="care-img-product" src={product.image} alt="img" />
                             <div className="care-texts">

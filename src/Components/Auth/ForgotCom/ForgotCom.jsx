@@ -14,7 +14,7 @@ const ForgotCom = () => {
             className="macaron-image"
           />
         </div>
-        <div className="login-body">
+        <div className="login-body ">
           <form>
             <h2>Забыли пароль?</h2>
             <div className="form-footer">
@@ -24,7 +24,7 @@ const ForgotCom = () => {
                 <button type="submit" className="login-button">продолжить</button>
               </Link>
             </div>
-          </form>
+          </form>   
           <div className="signup-link">
             <Link to="/sign-up">Зарегистрироваться</Link>
           </div>

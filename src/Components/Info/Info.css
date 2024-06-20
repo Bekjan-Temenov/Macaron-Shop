@@ -31,9 +31,10 @@ color: #292929;
 .info-content-text-count{
     background: #FFFFFF;
     border: 1px solid #EDEDF0;
-    padding: 10px 87px 24px 8px;
+    padding: 10px 57px 24px 8px;
     border-radius: 5px;
-    width:50vh
+    width:50vh;
+    border:1px solid red
 }
 .info-content-text-count h4{
  
@@ -45,14 +46,13 @@ color: #292929;
 
 }
 .info-content-text-count-in{
-    width: 570px;
-    height: 156px;
+    width: 100%;
+    height: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: space-betwen;
-    margin-top: -10px;
-
+    justify-content: space-between;
+    border:1px solid red
 }
 .info-content-text-price{
     display: flex;
@@ -144,7 +144,9 @@ color: #E7426A;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    width: 55vh;
+    width: 100%;
+    margin-top: 10px;
+    border:1px solid red
 }
 .quantity-text{
     color: rgb(41, 41, 41);

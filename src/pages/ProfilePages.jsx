@@ -6,7 +6,8 @@ import Profile from '../Components/Auth/profile/Profile'
 function ProfilePages() {
   return (
     <div>
-        <Profile/></div>
+      <Profile />
+    </div>
   )
 }
 export default ProfilePages
