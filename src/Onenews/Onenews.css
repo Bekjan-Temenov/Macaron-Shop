@@ -157,7 +157,7 @@ body {
   
   button {
     padding: 15px 30px;
-    background-color: #007bff;
+    background-color: #d9534f;
     color: white;
     border: none;
     border-radius: 5px;
@@ -167,7 +167,7 @@ body {
   }
   
   button:hover {
-    background-color: #0056b3;
+    background-color: #ee8d8a;
   }
   
   /* Footer Styles */

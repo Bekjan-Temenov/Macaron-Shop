@@ -11,7 +11,8 @@ import ProfilePages from "../pages/ProfilePages";
 import PhotoPages from "../pages/PhotoPages";
 import InfoPages from "../pages/InfoPages";
 import OnenewsPages from "../pages/OnenewsPages";
-
+import BasketPage from "../pages/Basket/BasketPage";
+import DelivPage from "../pages/DelivPage";
 
 export const router = createBrowserRouter([
     {
@@ -56,9 +57,18 @@ export const router = createBrowserRouter([
                 element:<InfoPages/>
             },
             {
-                path:"Onenews",
+                path:"/Onenews",
                 element:<OnenewsPages/>
+            },
+            {
+                path:"/deliv",
+                element:<DelivPage/>
+            },
+            {
+                path:"/basket",
+                element:<BasketPage/>
             },
         ],
     },
 ]);
+

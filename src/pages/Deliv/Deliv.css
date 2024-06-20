@@ -1,0 +1,181 @@
+.containerDeliv {
+    width: 1440px;
+    height: 1603px;
+    top: 172px;
+    gap: 0px;
+    opacity: 0px;
+    background: rgba(247, 247, 247, 1);
+    margin-top: 5rem;
+    position: relative;
+}
+
+.head {
+    display: flex;
+    padding-top: 80px;
+}
+
+.headImg {
+    gap: 0px;
+    opacity: 0px;
+    position: absolute;
+    margin-left: 20px;
+    margin-top: -270px;
+}
+
+.bike {
+    width: 380.35px;
+    height: 230.61px;
+    top: 487.12px;
+    left: 156.83px;
+    position: absolute;
+    z-index: 1;
+}
+
+.list {
+    width: 80.21px;
+    height: 66.95px;
+    top: 455px;
+    left: 160.45px;
+    position: absolute;
+    z-index: 2;
+}
+
+.mac1 {
+    width: 200.92px;
+    height: 250 .78px;
+    top: 555.59px;
+    left: 160.91px;
+    position: absolute;
+    z-index: 2;
+}
+
+.mac2 {
+    width: 225.12px;
+    height: 235.92px;
+    top: 545.68px;
+    left: 335.33px;
+    position: absolute;
+    z-index: 2;
+}
+
+.headText {
+    margin-left: 50rem;
+}
+
+.headText h1 {
+    width: 417px;
+    height: 51px;
+    top: 312px;
+    left: 735px;
+    gap: 0px;
+    opacity: 0px;
+    font-family: Montserrat;
+    font-size: 42px;
+    font-weight: 600;
+    line-height: 51.2px;
+    text-align: left;
+}
+
+.headText p {
+    width: 470px;
+    height: 87px;
+    top: 380px;
+    left: 735px;
+    gap: 0px;
+    opacity: 0px;
+    font-family: Proxima Nova;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 23.4px;
+    text-align: left;
+}
+
+.headText h2 {
+    width: 228px;
+    height: 30px;
+    top: 483px;
+    left: 735px;
+    gap: 0px;
+    opacity: 0px;
+    font-family: Montserrat;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 21.94px;
+    text-align: left;
+}
+
+.headText span {
+    width: 470px;
+    height: 275px;
+    top: 520px;
+    left: 735px;
+    gap: 0px;
+    opacity: 0.9px;
+    font-family: Proxima Nova;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 20.8px;
+    text-align: left;
+}
+
+.headSection {
+    display: flex;
+}
+
+.sectionImg {
+
+    margin-top: 100px;
+}
+
+.imgSection {
+    position: absolute;
+    z-index: 2;
+}
+
+.textSection {
+    position: absolute;
+    z-index: 2;
+    margin-top: 13rem;
+    margin-left: 14rem;
+}
+
+.layer {
+    width: 256px;
+    height: 343.08px;
+    top: 300.01px;
+    left: 900.01px;
+    gap: 0px;
+    opacity: 0px;
+    position: absolute;
+    z-index: 1;
+}
+
+.cut {
+    width: 66px;
+    height: 73px;
+    top: 300.01px;
+    left: 900.01px;
+    gap: 0px;
+    opacity: 0px;
+    position: absolute;
+    z-index: 2;
+}
+
+.macaron {
+    width: 235px;
+    height: 235px;
+    top: 310px;
+    left: 910.5px;
+    gap: 0px;
+    opacity: 0px;
+    position: absolute;
+    z-index: 2;
+}
+
+.footerImg {
+    width: 1440px;
+    height: 387px;
+    top: 1589px;
+    gap: 0px;
+    opacity: 0px;
+}
