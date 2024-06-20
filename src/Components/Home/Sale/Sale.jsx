@@ -1,5 +1,6 @@
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Container } from '../../Container/Container';
+import { motion } from 'framer-motion';
 import product from "../../../assets/bekjan/svg/product.svg";
 import product2 from "../../../assets/bekjan/svg/products2.svg";
 import product3 from "../../../assets/bekjan/svg/products3.svg";
@@ -38,14 +39,32 @@ export default function App() {
         { image: product3, text: "Акция 4: купи один, получи второй бесплатно" },
         { image: product4, text: "Акция 5: скидка 20% на все товары" },
     ];
+    const animation = {
+        hidden: {
+            y: 60,
+            opacity: 0,
+        },
+        visible: custom => ({
+            y: 0,
+            opacity: 1,
+            transition: {
+                delay: custom * 0.3,
+                duration: 0.5,
+                ease: 'easeInOut'
+            }
+        })
+    }
 
     return (
         <Container>
 
-            <div className='carusel'>
-                <div className='text-sale'>
+            <motion.div
+                initial="hidden"
+                whileInView="visible"
+                viewport={{ amount: 0.3, once: true }} className='carusel'>
+                <motion.div variants={animation} custom={1} className='text-sale'>
                     Акции
-                </div>
+                </motion.div>
                 <Swiper
                     slidesPerView={4}
                     spaceBetween={30}
@@ -60,11 +79,13 @@ export default function App() {
                 >
                     {slides.map((slide, index) => (
                         <SwiperSlide key={index}>
-                            <Slide image={slide.image} saleImage={sale} text={slide.text} />
+                            <motion.div variants={animation} custom={index} className='border'>
+                                <Slide image={slide.image} saleImage={sale} text={slide.text} />
+                            </motion.div>
                         </SwiperSlide>
                     ))}
                 </Swiper>
-            </div>
+            </motion.div>
         </Container>
     );
 }

@@ -1,4 +1,5 @@
 import { Container } from "../../Container/Container"
+import { motion } from "framer-motion";
 import Ponchik0 from "../../../assets/bekjan/svg/ponchik0.svg";
 import Ponchik1 from "../../../assets/bekjan/svg/ponchik1.svg";
 import Ponchik2 from "../../../assets/bekjan/svg/ponchik2.svg";
@@ -19,24 +20,43 @@ const HolidaysTimeline = () => {
         { icon: <img src={Ponchik4} alt="icon" />, date: '8 марта', name: 'Международный Женский День' },
     ];
 
+    const animation = {
+        hidden: {
+            y: 60,
+            opacity: 0,
+        },
+        visible: custom => ({
+            y: 0,
+            opacity: 1,
+            transition: {
+                delay: custom * 0.1,
+                duration: 0.6,
+                ease: 'easeInOut'
+            }
+        })
+    };
     return (
         <Container>
-            <div className="timeline-container">
-                <h2>Ближайшие праздники</h2>
+            <motion.div
+                initial="hidden"
+                whileInView="visible"
+                viewport={{ amount: 0.1, once: true }}
+                className="timeline-container">
+                <motion.h2 variants={animation} custom={1}>Ближайшие праздники</motion.h2>
                 <div className="new2"></div>
                 <div className="timeline">
                     <img className="hat" src={PonchikHat} alt="img" />
                     {holidays.map((holiday, index) => (
-                        <div key={index} className="timeline-item">
+                        <motion.div variants={animation} custom={index} key={index} className="timeline-item">
                             <div className="icon-container">{holiday.icon}</div>
                             <div className="text-container" >
                                 <p className="date" >{holiday.date} </p>
                                 <p className="name" >{holiday.name}</p>
                             </div>
-                        </div>
+                        </motion.div>
                     ))}
                 </div>
-            </div>
+            </motion.div>
         </Container>
     );
 };

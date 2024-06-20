@@ -54,9 +54,9 @@ const Producs = () => {
                                 </div>
                                 <div className="price">
                                     <p>{product.price}</p>
-                                    <button className="button">
-                                        <img className="cart" src={card} alt="img" />
-                                        В корзину
+                                    <button className="product-button">
+                                        <img className="product-cart" src={card} alt="img" />
+                                        Купить
                                     </button>
                                 </div>
                             </div>
