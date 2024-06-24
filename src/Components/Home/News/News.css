@@ -29,7 +29,7 @@
     margin-top: 64px;
     margin-bottom: 50px;
   }
-  .news-text h3{
+  .news-text .h3{
     border-radius: 0px 0px 5px 5px;
     color: rgb(0, 0, 0);
     margin: 0;
@@ -37,7 +37,7 @@
     margin-top: 10px;
     margin-bottom: 10px;
   }
-  .news-text p{
+  .news-text .p{
     color: rgb(150, 150, 150);
     font-family: Montserrat;
     font-size: 14px;
@@ -48,7 +48,7 @@
     margin: 0;
     padding: 0;
   }
-  .news-text span{
+  .news-text .span{
     color: rgb(107, 106, 106);
     font-family: Proxima Nova;
     font-size: 14px;
@@ -60,7 +60,7 @@
     margin: 0;
   }
 
-  .news-product-text h3{
+  .news-product-text .h3{
     color: rgb(41, 41, 41);
     font-family: Montserrat;
     font-size: 18px;

@@ -49,8 +49,10 @@ const RegistrationForm = () => {
             <div className='form'>
               <div className="form-group">
                 <div className='form-input'>
-                  <p>Ваше имя</p>
+                  <p className='p'>Ваше имя</p>
                   <input
+                  className='input'
+
                     type="text"
                     name="first_name"
                     placeholder="First Name"
@@ -61,7 +63,8 @@ const RegistrationForm = () => {
                 </div>
                 <div className='form-input'>
                   <p>Фамилия</p>
-                  <input
+                  <input 
+                  className='input'
                     type="text"
                     name="last_name"
                     placeholder="Last Name"
@@ -73,6 +76,7 @@ const RegistrationForm = () => {
                 <div className='form-input'>
                   <p>E-mail</p>
                   <input
+                  className='input'
                     type="email"
                     name="email"
                     placeholder="Ваш e-mail"
@@ -83,7 +87,7 @@ const RegistrationForm = () => {
                 </div>
                 <div className='form-input'>
                   <p>Пароль</p>
-                  <input
+                  <input className='input'
                     type="password"
                     name="password"
                     placeholder="Пароль"
@@ -94,7 +98,7 @@ const RegistrationForm = () => {
                 </div>
                 <div className='form-input'>
                   <p>Повторите пароль</p>
-                  <input
+                  <input className='input'
                     type="password"
                     name="password_confirmation"
                     placeholder="Повторите пароль"
@@ -110,10 +114,10 @@ const RegistrationForm = () => {
           {status === 'LOADING' && <p>Loading...</p>}
           {status === 'ERROR' && <p>Error: {JSON.stringify(error)}</p>}
           <div className="login-link">
-            <p>Уже зарегистрированы? <Link to="/sign-in">Войти</Link></p>
+            <p className='p'>Уже зарегистрированы? <Link to="/sign-in">Войти</Link></p>
           </div>
           <div className="disclaimer">
-            <p>
+            <p className='p'>
               Нажимая на кнопку Отправить заявку на регистрацию, я принимаю и соглашаюсь с <a href="#">Договором оферты</a> и разрешаю обработку моих персональных данных в соответствии с <a href="#">Политикой конфиденциальности</a>
             </p>
           </div>
