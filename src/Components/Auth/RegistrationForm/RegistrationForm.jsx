@@ -47,7 +47,7 @@ const RegistrationForm = () => {
           <p>Пройдите регистрацию</p>
           <form onSubmit={handleSubmit}>
             <div className='form'>
-              <div className="form-group">
+              <div className="form-groups">
                 <div className='form-input'>
                   <p>Ваше имя</p>
                   <input

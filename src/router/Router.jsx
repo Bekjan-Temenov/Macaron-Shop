@@ -13,6 +13,7 @@ import InfoPages from "../pages/InfoPages";
 import OnenewsPages from "../pages/OnenewsPages";
 import BasketPage from "../pages/Basket/BasketPage";
 import DelivPage from "../pages/DelivPage";
+import SetsPage from "../pages/SetsPage";
 
 export const router = createBrowserRouter([
     {
@@ -68,6 +69,10 @@ export const router = createBrowserRouter([
                 path:"/basket",
                 element:<BasketPage/>
             },
+            {
+                path:"/sets",
+                element:<SetsPage/>
+            }
         ],
     },
 ]);
