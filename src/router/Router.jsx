@@ -13,6 +13,7 @@ import InfoPages from "../pages/InfoPages";
 import OnenewsPages from "../pages/OnenewsPages";
 import BasketPage from "../pages/Basket/BasketPage";
 import DelivPage from "../pages/DelivPage";
+import MacaronPages from "../pages/MacaronPages";
 // import Presentpages from "../pages/PresentPages";
 
 export const router = createBrowserRouter([
@@ -69,7 +70,10 @@ export const router = createBrowserRouter([
                 path:"/basket",
                 element:<BasketPage/>
             },
-
+            {
+                path:"/Macaron",
+                element:<MacaronPages/>
+            },
         ],
     },
 ]);

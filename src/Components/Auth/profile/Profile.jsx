@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { Container } from "../../Container/Container";
 import { Link } from "react-router-dom";
 
@@ -6,7 +6,13 @@ import profiles from "../../../assets/aftandil/svg/profiles.svg";
 import "./Profile.css";
 
 function Profile() {
-  const [profileImage, setProfileImage] = useState(profiles);
+  const [profileImage, setProfileImage] = useState(
+    localStorage.getItem("profileImage") || profiles
+  );
+
+  useEffect(() => {
+    localStorage.setItem("profileImage", profileImage);
+  }, [profileImage]);
 
   const handleImageChange = (event) => {
     const file = event.target.files[0];
@@ -22,13 +28,14 @@ function Profile() {
   return (
     <Container>
       <div className="Profile">
-        <Link to="/Photo">
-          <img className="Profile__image" src={profileImage} alt="Profile" />
-        </Link>
+        <img className="Profile__image" src={profileImage} alt="Profile" />
 
         <div className="inp_main">
           <div className="inProfile">
-            <input className="inp_2" type="text" placeholder="имя" required />
+            <input className="inp_2" 
+            type="text"
+             placeholder="имя"
+              required />
             <input
               className="inp_2"
               type="text"
@@ -38,13 +45,13 @@ function Profile() {
           </div>
           <div className="inProfile2">
             <input
-              className="inp_3"
+              className="inp_2"
               type="text"
               placeholder="@gmail"
               required
             />
             <input
-              className="inp_4"
+              className="inp_2"
               type="text"
               placeholder="номер вашего сотового телефона"
               required
@@ -65,6 +72,10 @@ function Profile() {
               </label>
               <Link to="/">
                 <button className="btn_2">Готово</button>
+              </Link>
+              <Link to="/RegistrationForm">
+                {" "}
+                <p className="w=[50px]">регистратция</p>{" "}
               </Link>
             </div>
           </div>
