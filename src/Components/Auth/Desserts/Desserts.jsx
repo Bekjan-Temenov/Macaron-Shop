@@ -23,7 +23,7 @@ const Desserts = () => {
     <div className="max-w-screen-lg mx-auto p-4">
       <h1 className="text-3xl font-bold text-center my-8">Каталог десертов</h1>
       <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
-        <div className="col-span-3 text-center bg-pink-200 p-8 rounded-lg">
+        <div className="col-span-3 text-center bg-pink-200 p-8 rounded-lg">ё
           <img src={mac_mak} alt="Макаруны" className="mx-auto mb-4" />
           <h2 className="text-2xl font-semibold">Пирожные макарон</h2>
           <p className="my-4">Самые классные, самые лучшие, свежие, воздушные, хрустящие макаруны. Лучшее, что мы умеем делать.</p>

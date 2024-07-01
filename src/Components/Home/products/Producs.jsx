@@ -1,65 +1,90 @@
 import { Container } from "../../Container/Container";
-import { useEffect } from 'react';
-import { useDispatch, useSelector } from 'react-redux';
-import { fetchProducts } from "../store/action";
+import { useDispatch } from 'react-redux';
 import { Link } from "react-router-dom";
+import { addToCart } from "../cart";
 import card from "../../../assets/bekjan/svg/cards.svg";
+import { motion } from "framer-motion";
+import productData from "../../api/api";
 import "./Producs.css";
-
 
 const Producs = () => {
     const dispatch = useDispatch();
-    const product = useSelector((state) => state.products.products);
-    const status = useSelector((state) => state.products.status);
-    const error = useSelector((state) => state.products.error);
 
-    useEffect(() => {
-        if (status === 'idle') {
-            dispatch(fetchProducts());
-        }
-    }, [status, dispatch]);
+    const addCart = (item) => {
+        dispatch(addToCart(item));
+        console.log("добавлено", item);
+        alert("добавлено");
+    };
 
-    if (status === 'loading') {
-        return <div>Loading...</div>;
-    } else if (status === 'failed') {
-        return <div>Error: {error}</div>;
-    }
+    const animation = {
+        hidden: {
+            y: 60,
+            opacity: 0,
+        },
+        visible: (custom) => ({
+            y: 0,
+            opacity: 1,
+            transition: {
+                delay: custom * 0.1,
+                duration: 0.4,
+                ease: 'easeInOut',
+            },
+        }),
+    };
 
-    if (!Array.isArray(product)) {
-        return <div>No products available</div>;
-    }
     return (
         <Container>
-            <div className="display">
-                <h1 className="h1">Популярные наборы</h1>
+            <motion.div
+                initial="hidden"
+                whileInView="visible"
+                viewport={{ amount: 0.1, once: true }}
+                className="display"
+            >
+                <motion.h1 variants={animation} custom={1} className="h1">
+                    Популярные наборы
+                </motion.h1>
                 <div className="products">
-                    {product.map((product, index) => (
-                        <div key={index} className="producter">
-                            <Link to="/info">
-                                <img className="img-product" src={product.image} alt="img" />
+                    {productData.map((product, index) => (
+                        <motion.div
+                            variants={animation}
+                            custom={index}
+                            key={index}
+                            className="producter"
+                        >
+                            <Link to={`/info/${product.id}`}>
+                                <motion.img
+                                    whileHover={{ scale: 1.1 }}
+                                    className="img-product"
+                                    src={product.img}
+                                    alt={product.name}
+                                />
                             </Link>
                             <div className="infos">
                                 <div className="texts">
-                                    <h3>{product.title}</h3>
+                                    <h3>{product.name}</h3>
                                     <p>{product.description}</p>
                                 </div>
                                 <div className="price">
-                                    <p>{product.price}</p>
-                                    <button className="product-btn">
-                                        <img className="product-cart" src={card} alt="img" />
+                                    <p>{product.price} руб</p>
+                                    <button
+                                        onClick={() => addCart(product)}
+                                        className="product-btn"
+                                    >
+                                        <img
+                                            className="product-cart"
+                                            src={card}
+                                            alt="Корзина"
+                                        />
                                         В корзину
                                     </button>
                                 </div>
                             </div>
-                        </div>
+                        </motion.div>
                     ))}
                 </div>
-                <button className="nabor">
-                    Все праздничные наборы
-                </button>
-            </div>
+            </motion.div>
         </Container>
     );
-}
+};
 
 export default Producs;

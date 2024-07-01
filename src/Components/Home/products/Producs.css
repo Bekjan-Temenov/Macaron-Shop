@@ -34,6 +34,10 @@
     width: 370px;
     height: 300px;
 }
+.img-pro{
+    position: initial;
+    z-index: 1;
+}
 .infos {
     border-bottom-right-radius: 6px;
     border-bottom-left-radius: 6px;
@@ -93,11 +97,13 @@
     align-items: center;
     justify-content: center;
     background-color: white;
+    color:black;
     gap: 8px;
     cursor: pointer;
 }
 .product-btn:hover{
     color:red;
+    background-color: white;
 }
 
 .nabor {
@@ -106,13 +112,11 @@
     border-radius: 6px;
     border: 1px solid rgb(78, 157, 211);
     margin: 30px auto;
-    display: flex;
     color: rgb(0, 0, 0);
     font-family: Montserrat, sans-serif;
-    font-size: 14px;
+    font-size: 13px;
     font-weight: 600;
     text-align: center;
-    justify-content: center;
     cursor: pointer;
 }
 

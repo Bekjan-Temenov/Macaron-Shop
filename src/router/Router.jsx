@@ -13,9 +13,6 @@ import InfoPages from "../pages/InfoPages";
 import OnenewsPages from "../pages/OnenewsPages";
 import BasketPage from "../pages/Basket/BasketPage";
 import DelivPage from "../pages/DelivPage";
-import MacaronPages from "../pages/MacaronPages";
-import Dessertspages from "../pages/Dessertspages";
-// import Presentpages from "../pages/PresentPages";
 
 export const router = createBrowserRouter([
     {
@@ -68,16 +65,8 @@ export const router = createBrowserRouter([
                 element:<DelivPage/>
             },
             {
-                path:"/basket",
+                path:"/Basket",
                 element:<BasketPage/>
-            },
-            {
-                path:"/Macaron",
-                element:<MacaronPages/>
-            },
-            {
-                path:"/Desserts",
-                element:<Dessertspages/>
             },
         ],
     },

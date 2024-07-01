@@ -58,25 +58,25 @@ const onenews = () => {
         <form>
           <div className="form-group">
             <label htmlFor="name">Ваше имя</label>
-            <input type="text" id="name" name="name" placeholder="Укажите имя" required />
+            <input className='form-group-input' type="text" id="name" name="name" placeholder="Укажите имя" required />
           </div>
           <div className="form-group">
             <label htmlFor="company">Название компании</label>
-            <input type="text" id="company" name="company" placeholder="Название компании" required />
+            <input className='form-group-input' type="text" id="company" name="company" placeholder="Название компании" required />
           </div>
           <div className="form-group">
             <label htmlFor="phone">Ваш телефон</label>
-            <input type="tel" id="phone" name="phone" placeholder="+7 (__) ___-__-__" required />
+            <input className='form-group-input' type="tel" id="phone" name="phone" placeholder="+7 (__) ___-__-__" required />
           </div>
           <div className="form-group">
             <label htmlFor="email">Email</label>
-            <input type="email" id="email" name="email" placeholder="E-mail" required />
+            <input className='form-group-input' type="email" id="email" name="email" placeholder="E-mail" required />
           </div>
           <div className="form-group">
             <label htmlFor="comments">Добавить комментарий</label>
-            <input type="text" id="comments" name="comments" placeholder="Добавить комментарий" />
+            <input className='form-group-input' type="text" id="comments" name="comments" placeholder="Добавить комментарий" />
           </div>
-          <button className='btn1' type="submit">Заказать расчёт</button>
+          <button  className='btn1' type="submit">Заказать расчёт</button>
         </form>
       </section>
 

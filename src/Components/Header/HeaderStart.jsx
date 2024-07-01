@@ -7,9 +7,11 @@ import telegram from "../../assets/bekjan/svg/telegram.svg"
 import wkontakt from "../../assets/bekjan/svg/wkontakt.svg"
 import odnaklass from "../../assets/bekjan/svg/odnaklass.svg"
 import { RxAvatar } from "react-icons/rx";
+import {useSelector } from "react-redux";
 import "./Header.css"
 
 function HeaderStart() {
+  const totalItem = useSelector ((state ) => state.cart.totalItems)
   return (
     <div className="color">
       <Container>
@@ -39,12 +41,18 @@ function HeaderStart() {
             <img className="img" src={phone} alt="img" />
             <p>8 812 309-82-88</p>
           </div>
+
+          <button className="header-btn">
           <div className="phone">
             <Link to="/basket">
-              <img className="img" src={card} alt="img" />
+              <img className="cart-img" src={card} alt="img" />
+              <div className="cart-quantity">
+              <p className="basket-quantity">{totalItem}</p>
+              </div>
             </Link>
-            <p>В корзине (4 товара)</p>
+            <p>В корзине ({totalItem} товара)</p>
           </div>
+          </button>
           <div className="logos">
             <Link to="/NotFound">
               <img className="img" src={telegram} alt="img" />

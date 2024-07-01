@@ -54,7 +54,7 @@
   }
   
   /* Стили для кнопки */
-  .button {
+  button {
     background-color: #d81b60;
     color: white;
     padding: 12px 20px;
@@ -65,11 +65,11 @@
     transition: background-color 0.3s ease;
   }
   
-  .button:hover {
+  button:hover {
     background-color: #d81b60;
   }
   
-  .button:focus {
+  button:focus {
     outline: none;
     box-shadow: 0 0 5px #d81b60;
   }
@@ -133,4 +133,10 @@
 
 .btn_2:hover {
   background-color: #ff6aa1;
+}
+.Profile__image, .profile {
+  width: 150px; 
+  height: 150px; 
+  border-radius: 50%;
+  object-fit: cover;
 }

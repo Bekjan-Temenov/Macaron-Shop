@@ -1,125 +1,28 @@
-/* 
-  .login-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100%;
-  }
-  
-  .login-box {
-    width: 550px;
-    padding: 0;
-    background-color: #fff;
-    border-radius: 10px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    overflow: hidden;
-  }
-  
-  .login-header img {
-    width: 100%;
-    height: auto;
-  }
-  
-  .login-body {
-    padding: 30px 40px;
-    text-align: center;
-  }
-  
-  .login-body h2 {
-    margin-bottom: 20px;
-    font-size: 24px;
-    color: #333;
-  }
-  
-  .form-group {
-    margin-bottom: 20px;
-    text-align: left;
-  }
-  
-  .form-group label {
-    display: block;
-    margin-bottom: 8px;
-    font-weight: 600;
-    color: #555;
-    
-  }
-  
-  .form-group input {
-    width: 100%;
-    padding: 10px;
-    border: 1px solid #ddd;
-    border-radius: 5px;
-    box-sizing: border-box;
-    font-size: 14px;
-    color: #555;
-  }
-  
-  .form-group input:focus {
-    border-color: #ff4081;
-    outline: none;
-  }
-  
-  .form-footer {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-top: 10px;
-  }
-  
-  .forgot-password {
-    font-size: 14px;
-    color: #ff4081;
-    text-decoration: none;
-  }
-  
-  .forgot-password:hover {
-    text-decoration: underline;
-  }
-  
-  .login-button {
-    background-color: #ff4081;
-    color: #fff;
-    border: none;
-    padding: 10px 20px;
-    border-radius: 5px;
-    font-size: 16px;
-    cursor: pointer;
-  }
-  
-  .login-button:hover {
-    background-color: #e6376e;
-  }
-  
-  .signup-link {
-    margin-top: 20px;
-    font-size: 14px;
-    color: #555;
-  }
-  
-  .signup-link a {
-    color: #ff4081;
-    text-decoration: none;
-  }
-  
-  .signup-link a:hover {
-    text-decoration: underline;
-  }
-   */
-   .input{
-    width: 350px;
-    margin-bottom: 15px;
-    height: 50px;
-    padding-left:15px;
-    border:none
-   }
-   .email{
-    color: rgb(41, 41, 41);
-    font-family: Proxima Nova;
-    font-size: 14px;
-    font-weight: 400;
-    line-height: -1px;
-    letter-spacing: 0%;
-    text-align: left;
-    margin: 0;
-    padding-bottom: 5px;
-   }
+.login-body {
+  box-sizing: border-box;
+  padding: 30px;
+}
+
+.login-body form {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.input {
+  width: 350px;
+  margin-bottom: 15px;
+  height: 50px;
+  padding-left: 15px;
+  border: none;
+}
+.email {
+  color: rgb(41, 41, 41);
+  font-family: Proxima Nova;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: -1px;
+  letter-spacing: 0%;
+  text-align: left;
+  margin: 0;
+  padding-bottom: 5px;
+}

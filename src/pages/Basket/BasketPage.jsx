@@ -1,90 +1,134 @@
-import "./Basket.css"
+import "./Basket.css";
 import { Container } from "../../Components/Container/Container";
 import { useDispatch, useSelector } from "react-redux";
-import first from '../../Components/image/first.png';
-import second from '../../Components/image/second.png';
-import center from '../../Components/image/center.png';
-import three from '../../Components/image/three.png';
-import four from '../../Components/image/fourth.png';
-import curer from '../../Components/image/curer.png';
-import person from '../../Components/image/person.png';
-import one from '../../Components/image/one.png';
-import two from '../../Components/image/two.png';
-import thre from '../../Components/image/thre.png';
-import foure from '../../Components/image/four.png';
-import left from '../../Components/image/left.png';
-import rigth from '../../Components/image/rigth.png';
+import { addToCart } from "../../Components/Home/cart";
+import card from "../../assets/bekjan/svg/card.svg";
+import productsData from "../../Components/api/api";
+// import first from '../../Components/image/first.png';
+// import second from '../../Components/image/second.png';
+import center from "../../Components/image/center.png";
+// import three from '../../Components/image/three.png';
+// import four from '../../Components/image/fourth.png';
+import curer from "../../Components/image/curer.png";
+import person from "../../Components/image/person.png";
+// import one from '../../Components/image/one.png';
+// import two from '../../Components/image/two.png';
+// import thre from '../../Components/image/thre.png';
+// import foure from '../../Components/image/four.png';
+// import left from '../../Components/image/left.png';
+// import rigth from '../../Components/image/rigth.png';
+import { Link } from "react-router-dom";
+import { toast } from "react-toastify";
+import useCart from "../../hooks/useCart";
+import { useState } from "react";
+import MacaronOrder from "./MacaronOrder";
 
 const BasketPage = () => {
-  const { carts } = useSelector((state) => state.cart)
-  // const dispatch = useDispatch()
+  const { carts } = useSelector((state) => state.cart);
+  const [isOpen, setIsOpen] = useState(false);
+  const [dos, setDos] = useState(0);
+  const dispatch = useDispatch();
+  const { changeCount } = useCart();
+
+  const addCart = (item) => {
+    dispatch(addToCart(item));
+    console.log(addCart);
+    toast("добавлено в карзину");
+  };
+  let subtotal = carts.reduce((acc, item) => {
+    return acc + item.price * item.quantity;
+  }, 0);
+
+  const handleDos = (cost) => {
+    setDos(cost);
+  };
 
   return (
-    <Container>
-      <div className='container'>
+    <div className="containers">
+      <Container>
         <h1>Ваша корзина</h1>
         <section>
           <div className="rigthCon">
             <div className="first">
-              <div className='value'>
-                {
-                  carts.map((item, index) => (<>
-                    <div className="box">
-                      <img className='imeg' src={item.img} alt="" />
+              <div className="value">
+                {carts.map((data, index) => (
+                  <>
+                    <div key={index} className="box">
+                      <img className="imeg" src={data.img} alt="img" />
                       <div className="texts">
-                        <h2>{item.name}</h2>
+                        <h2>{data.name}</h2>
                       </div>
                       <div className="miniBox">
-                        <button>-</button>
-                        1
-                        <button>+</button>
+                        <button
+                          onClick={() => changeCount("minus", data)}
+                          className="miniBox-button "
+                        >
+                          -
+                        </button>
+                        {data.quantity}
+                        <button
+                          onClick={() => changeCount("plus", data)}
+                          className="miniBox-button "
+                        >
+                          +
+                        </button>
                       </div>
                       <div className="priceBoxx">
-                        <p><span className="highlight-price">{item.price} руб.</span></p>
+                        <p>
+                          <span className="highlight-price">
+                            {data.quantity * data.price} руб.
+                          </span>
+                        </p>
                       </div>
                       <button className="dell">
-                        <img src="https://www.svgrepo.com/show/499592/close-x.svg" alt="img" />
+                        <img
+                          src="https://www.svgrepo.com/show/499592/close-x.svg"
+                          alt="img"
+                        />
                       </button>
                     </div>
                     <hr />
-                  </>))
-                }
+                  </>
+                ))}
               </div>
 
               <div className="center">
                 <img src={center} alt="" />
               </div>
-
               <div className="additi">
-                <div className="addBox">
-                  <img src={three} alt="" />
-                  <h2 className="textH3">Набор эклеров</h2>
-                  <div className="boxMini">
-                    <button>-</button>
-                    0
-                    <button>+</button>
-                  </div>
-                  <div className="priceBox2">
-                    <p>600  <span className="highlight-price">руб.</span></p>
-                    <p>Цена: <span className="highlight-price"> 400 руб.</span></p>
-                  </div>
-                </div>
-                <hr className="hr2" />
-                <div className="addBox">
-                  <img src={four} alt="" />
-                  <h2 className="textH3">Набор трубочек со сгущёнкой</h2>
-                  <div className="boxMini2">
-                    <button>-</button>
-                    0
-                    <button>+</button>
-                  </div>
-                  <div className="priceBox2">
-                    <p>900  <span className="highlight-price">руб.</span></p>
-                    <p>Цена: <span className="highlight-price"> 400 руб.</span></p>
-                  </div>
-                </div>
+                {productsData.slice(1, 4).map((data, index) => (
+                  <>
+                    <div key={index} className="addBox">
+                      <img src={data.img} alt="" />
+                      <h2 className="textH3">{data.name}</h2>
+                      <div className="miniBox">
+                        <button
+                          onClick={() => addCart(data)}
+                          className="miniBox-button "
+                        >
+                          -
+                        </button>
+                        0
+                        <button
+                          onClick={() => addCart(data)}
+                          className="miniBox-button "
+                        >
+                          +
+                        </button>
+                      </div>
+                      <div className="priceBox2">
+                        <p>
+                          Цена:{" "}
+                          <span className="highlight-price">
+                            {" "}
+                            {data.price} руб.
+                          </span>
+                        </p>
+                      </div>
+                    </div>
+                  </>
+                ))}
               </div>
-
             </div>
             <div className="second">
               <h2>Доставка</h2>
@@ -103,34 +147,33 @@ const BasketPage = () => {
                 <div className="secondCon">
                   <p>Способ доставки:</p>
                   <div className="secondMiddle">
-                    <div className="curer">
+                    <button onClick={() => handleDos(400)} className="curer">
                       <img src={curer} alt="" />
                       <div className="textSecond">
-                        <p>Курьерская доставка
+                        <p>
+                          Курьерская доставка
                           <br />
-                          <span className="highlight-text">
-                            400 руб.
-                          </span>
+                          <span className="highlight-text">400 руб.</span>
                         </p>
                       </div>
-                    </div>
-                    <div className="person">
+                    </button>
+                    <button onClick={() => handleDos(0)} className="person">
                       <img src={person} alt="" />
                       <div className="textSecond">
-                        <p>Самовывоз
+                        <p>
+                          Самовывоз
                           <br />
-                          <span className="highlight-text">
-                            Бесплатно
-                          </span>
+                          <span className="highlight-text">Бесплатно</span>
                         </p>
                       </div>
-                    </div>
+                    </button>
                   </div>
                 </div>
 
                 <div className="thithInput">
                   <p>Адрес доставки</p>
-                  <input type="text"
+                  <input
+                    type="text"
                     placeholder="Не нужно заполнять при самовывозе"
                   />
                 </div>
@@ -138,23 +181,21 @@ const BasketPage = () => {
                 <div className="fourInput">
                   <div className="data">
                     <p>Дата получения</p>
-                    <input type="number"
-                      placeholder="22.12.2021" />
+                    <input type="number" placeholder="22.12.2021" />
                   </div>
                   <div className="clock">
                     <p>Время</p>
-                    <input type="number"
-                      placeholder="12:00 - 16:00" />
+                    <input type="number" placeholder="12:00 - 16:00" />
                   </div>
                 </div>
 
-
                 <div className="fiveInput">
                   <p>Комментарий к заказe</p>
-                  <input type="text"
-                    placeholder="Здесь Вы можете написать пожелания, относительно анонимной доставки, текстa oткрытки и другое." />
+                  <input
+                    type="text"
+                    placeholder="Здесь Вы можете написать пожелания, относительно анонимной доставки, текстa oткрытки и другое."
+                  />
                 </div>
-
 
                 <div className="sixInput">
                   <p>Метод оплаты</p>
@@ -168,12 +209,18 @@ const BasketPage = () => {
                   </div>
                   <hr />
                   <div className="priceCheck">
-                    <p className="piCheck">Итоговая сумма заказа вместе с доставкой:</p>
-                    <span className="highlight-check">1400 руб.</span>
+                    <p className="piCheck">
+                      Итоговая сумма заказа вместе с доставкой:
+                    </p>
+                    <span className="highlight-check">
+                      {subtotal + dos} руб.
+                    </span>
                   </div>
                   <hr />
                   <button>Оформить заказ</button>
-                  <span className="bott">Нажимая на кнопку "Оформить заказ" Я принимаю и соглашаюсь с Договором оферты и разрешаю обработку моих персональных
+                  <span className="bott">
+                    Нажимая на кнопку "Оформить заказ" Я принимаю и соглашаюсь с
+                    Договором оферты и разрешаю обработку моих персональных
                     <br /> данных в соответствии с Политикой конфиденциальности
                   </span>
                 </div>
@@ -184,29 +231,70 @@ const BasketPage = () => {
             <div className="itog">
               <h2>Итого</h2>
               <div className="textItog">
-                <p>Стоимость товаров<br />Скидка<br />Доставка</p>
-                <span>700 руб<br />0 руб<br />400 руб</span>
+                <p>
+                  Стоимость товаров
+                  <br />
+                  Скидка
+                  <br />
+                  Доставка
+                </p>
+                <span>
+                  {subtotal}руб
+                  <br />0 руб
+                  <br />
+                  {dos} руб
+                </span>
               </div>
-              <hr />
+              <hr className="basket-hr" />
               <div className="priceItog">
                 <p>К оплате</p>
-                <span>1100 руб</span>
+                <span>{subtotal + dos}руб</span>
               </div>
-              <hr />
               <div className="inp">
                 <p>Промокод:</p>
-                <input
-                  type="text"
-                  placeholder="Введите промокод" />
+                <input type="text" placeholder="Введите промокод" />
                 <button>прменить</button>
               </div>
-              <button className="itogButton">
+              <button onClick={() => setIsOpen(!isOpen)} className="itogButton">
                 Оформить заказ
               </button>
             </div>
           </div>
+          {isOpen && <MacaronOrder setOpen={setIsOpen} open={isOpen} />}
         </section>
-        <div className="bottomCon">
+        <div className="display">
+          <h1 className="h1">Популярные наборы</h1>
+          <div className="products">
+            {productsData.slice(0, 3).map((product, index) => (
+              <div key={index} className="producter">
+                <Link to={`/info/${product.id}`}>
+                  <img
+                    whileHover={{ scale: 1.1 }}
+                    className="img-product"
+                    src={product.img}
+                    alt={product.name}
+                  />
+                </Link>
+                <div className="infos">
+                  <div className="texts">
+                    <h3>{product.name}</h3>
+                    <p>{product.description}</p>
+                  </div>
+                  <div className="price">
+                    <p>{product.price} руб</p>
+                    <button
+                      onClick={() => addCart(product)}
+                      className="product-btn"
+                    >
+                      <img src={card} alt="Корзина" />В корзину
+                    </button>
+                  </div>
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+        {/* <div className="bottomCon">
           <h1>Добавить в заказ</h1>
           <img className="gis" src={left} alt="" />
           <div className="category">
@@ -283,11 +371,10 @@ const BasketPage = () => {
             </div>
           </div>
           <img className="gisTo" src={rigth} alt="" />
-        </div>
-      </div>
-    </Container>
+        </div> */}
+      </Container>
+    </div>
+  );
+};
 
-  )
-}
-
-export default BasketPage
+export default BasketPage;

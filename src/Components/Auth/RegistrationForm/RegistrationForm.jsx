@@ -8,7 +8,7 @@ import './RegistrationForm.css';
 
 const RegistrationForm = () => {
   const dispatch = useDispatch();
-  const { signup: { status, message: error} } = useSelector(state => state.auth);
+  const { signup: { status, message: error } } = useSelector(state => state.auth);
 
   const [formData, setFormData] = useState({
     first_name: '',
@@ -47,7 +47,7 @@ const RegistrationForm = () => {
           <p>Пройдите регистрацию</p>
           <form onSubmit={handleSubmit}>
             <div className='form'>
-              <div className="form-group">
+              <div className="form-groups">
                 <div className='form-input'>
                   <p className='p'>Ваше имя</p>
                   <input
@@ -56,6 +56,7 @@ const RegistrationForm = () => {
                     type="text"
                     name="first_name"
                     placeholder="First Name"
+                    className='auth-input'
                     onChange={handleChange}
                     value={formData.first_name}
                     required
@@ -63,8 +64,7 @@ const RegistrationForm = () => {
                 </div>
                 <div className='form-input'>
                   <p>Фамилия</p>
-                  <input 
-                  className='input'
+                  <input
                     type="text"
                     name="last_name"
                     placeholder="Last Name"
@@ -76,7 +76,6 @@ const RegistrationForm = () => {
                 <div className='form-input'>
                   <p>E-mail</p>
                   <input
-                  className='input'
                     type="email"
                     name="email"
                     placeholder="Ваш e-mail"
@@ -87,7 +86,7 @@ const RegistrationForm = () => {
                 </div>
                 <div className='form-input'>
                   <p>Пароль</p>
-                  <input className='input'
+                  <input
                     type="password"
                     name="password"
                     placeholder="Пароль"
@@ -98,7 +97,7 @@ const RegistrationForm = () => {
                 </div>
                 <div className='form-input'>
                   <p>Повторите пароль</p>
-                  <input className='input'
+                  <input
                     type="password"
                     name="password_confirmation"
                     placeholder="Повторите пароль"

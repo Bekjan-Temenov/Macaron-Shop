@@ -1,22 +1,34 @@
 import { Container } from "../Container/Container";
+import { useState } from "react";
 import { Link } from "react-router-dom";
-import logo from "../../assets/bekjan/svg/logo.svg"
-import dni from "../../assets/bekjan/svg/dni.svg"
+import logo from "../../assets/bekjan/svg/logo.svg";
+import dni from "../../assets/bekjan/svg/dni.svg";
 import HeaderStart from "./HeaderStart";
 import Advertising from "./Advertising";
-import "./Header.css"
+import "./Header.css";
 
 function Header() {
+  const [color, setColor] = useState(7);
+
+  const handleColor = (index) => {
+    setColor(index);
+  };
+
   return (
     <>
       <Advertising />
       <HeaderStart />
       <Container>
-        <div className="header">
-          <div className="header-logo">
+        <div className="header-logo">
+          <ul>
             <Link to="/no-page">
               <div className="dni">
-                <p className="header-p">Сладкие дни</p>
+                <p
+                  onClick={() => handleColor(0)}
+                  className={color === 0 ? "li" : "header-p"}
+                >
+                  Сладкие дни
+                </p>
                 <img src={dni} alt="img" />
               </div>
             </Link>
@@ -27,13 +39,23 @@ function Header() {
               <option value="audi">Audi</option>
             </select>
             <Link to="/no-page">
-              <p className="header-p">Собрать набор</p>
+              <p
+                onClick={() => handleColor(1)}
+                className={color === 1 ? "li" : "header-p"}
+              >
+                Собрать набор
+              </p>
             </Link>
             <Link to="/">
               <img src={logo} alt="img" />
             </Link>
             <Link to="/no-page">
-              <p className="header-p">Создать дизайн</p>
+              <p
+                onClick={() => handleColor(2)}
+                className={color === 2 ? "li" : "header-p"}
+              >
+                Создать дизайн
+              </p>
             </Link>
             <select className="header-p" name="cars" id="cars">
               <option value="volvo">КОМПАНИЯМ</option>
@@ -47,7 +69,7 @@ function Header() {
               <option value="mercedes">Mercedes</option>
               <option value="audi">Audi</option>
             </select>
-          </div>
+          </ul>
         </div>
       </Container>
     </>

@@ -32,50 +32,20 @@ function Profile() {
 
         <div className="inp_main">
           <div className="inProfile">
-            <input className="inp_2" 
-            type="text"
-             placeholder="имя"
-              required />
-            <input
-              className="inp_2"
-              type="text"
-              placeholder="фамилия"
-              required
-            />
+            <input className="inp_2" type="text" placeholder="имя" required />
+            <input className="inp_2" type="text" placeholder="фамилия" required />
           </div>
           <div className="inProfile2">
-            <input
-              className="inp_2"
-              type="text"
-              placeholder="@gmail"
-              required
-            />
-            <input
-              className="inp_2"
-              type="text"
-              placeholder="номер вашего сотового телефона"
-              required
-            />
+            <input className="inp_2" type="text" placeholder="@gmail" required />
+            <input className="inp_2" type="text" placeholder="номер вашего сотового телефона" required />
             <div className="input__profile-wrapper">
-              <label className="input__profile-label" htmlFor="myfile">
-                Выберите файл:
-              </label>
-              <input
-                className="input__profile"
-                type="file"
-                id="myfile"
-                name="myfile"
-                onChange={handleImageChange}
-              />
+              <label className="input__profile-label" htmlFor="myfile">Выберите файл:</label>
+              <input className="input__profile" type="file" id="myfile" name="myfile" onChange={handleImageChange} />
               <label htmlFor="myfile" className="custom-file-upload">
                 Выбрать файл
               </label>
               <Link to="/">
                 <button className="btn_2">Готово</button>
-              </Link>
-              <Link to="/RegistrationForm">
-                {" "}
-                <p className="w=[50px]">регистратция</p>{" "}
               </Link>
             </div>
           </div>

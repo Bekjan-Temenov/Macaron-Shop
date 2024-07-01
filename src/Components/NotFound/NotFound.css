@@ -1,0 +1,78 @@
+/* src/NotFound.css */
+.not-found {
+    text-align: center;
+    margin-top: 50px;
+    font-family: 'Arial', sans-serif;
+    margin-right: 80px;
+  }
+  
+  .error-code {
+    font-size: 120px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .number {
+    display: inline-block;
+    margin: 0 10px;
+  }
+  
+  .macaron {
+    position: relative;
+    display: inline-block;
+    width: 100px;
+    height: 100px;
+    background-color: #D2B48C;
+    border-radius: 50%;
+    overflow: hidden;
+  }
+  
+  .macaron::before {
+    content: '';
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 60px;
+    height: 15px;
+    background-color: #A0522D;
+    border-radius: 10px;
+  }
+  
+  .face {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 40px;
+  }
+  
+
+  
+  .back-button {
+    width: 200px;
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 18px;
+    color: #fff;
+    background-color: #f06292;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-left: -370px;
+    border:1px solid red;
+    /* gap: 50px; */
+    margin-top: 50px;
+  }
+  
+  .back-button:hover {
+    background-color: #e91e63;
+  }
+  
+  .image {
+    margin-top: 20px;
+  }
+  .j1 {
+    height: 60px;
+  }
