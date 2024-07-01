@@ -1,4 +1,4 @@
-const productsData = [
+export const productsData = [
   {
     id: 1,
     name: "Сердце",
@@ -141,4 +141,3 @@ const productsData = [
   }
 ];
 
-export default productsData;

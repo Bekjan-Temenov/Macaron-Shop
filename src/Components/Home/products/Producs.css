@@ -52,7 +52,7 @@
     margin-bottom: 5px;
 }
 
-.texts h3 {
+.texts .h3 {
     color: rgb(41, 41, 41);
     font-family: Montserrat, sans-serif;
     font-size: 18px;
@@ -60,7 +60,7 @@
     margin: 0;
 }
 
-.texts p {
+.texts .p {
     color: rgb(106, 105, 105);
     font-family: Proxima Nova, sans-serif;
     font-size: 14px;
@@ -76,7 +76,7 @@
     width: 100%;
 }
 
-.price p {
+.price .p {
     color: rgb(231, 66, 106);
     border-right: 1px solid rgb(180, 180, 180);
     font-family: Montserrat, sans-serif;

@@ -33,6 +33,10 @@ function Profile() {
         <div className="inp_main">
           <div className="inProfile">
             <input className="inp_2" type="text" placeholder="имя" required />
+            <input className="inp_2" 
+            type="text"
+             placeholder="имя"
+              required />
             <input
               className="inp_2"
               type="text"
@@ -42,13 +46,13 @@ function Profile() {
           </div>
           <div className="inProfile2">
             <input
-              className="inp_3"
+              className="inp_2"
               type="text"
               placeholder="@gmail"
               required
             />
             <input
-              className="inp_4"
+              className="inp_2"
               type="text"
               placeholder="номер вашего сотового телефона"
               required
@@ -69,6 +73,10 @@ function Profile() {
               </label>
               <Link to="/">
                 <button className="btn_2">Готово</button>
+              </Link>
+              <Link to="/RegistrationForm">
+                {" "}
+                <p className="w=[50px]">регистратция</p>{" "}
               </Link>
             </div>
           </div>

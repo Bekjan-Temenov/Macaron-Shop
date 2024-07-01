@@ -54,17 +54,17 @@ function HeaderStart() {
           </div>
           </button>
           <div className="logos">
-            <Link to="/no-page">
+            <Link to="/NotFound">
               <img className="img" src={telegram} alt="img" />
             </Link>
-            <Link to="/no-page">
+            <Link to="/NotFound">
               <img className="img" src={wkontakt} alt="img" />
             </Link>
-            <Link to="/no-page">
+            <Link to="/NotFound">
               <img className="img" src={odnaklass} alt="img" />
             </Link>
           </div>
-          <Link to="sign-up">
+          <Link to="/Profile">
             <RxAvatar className="avatar" />
           </Link>
         </div>

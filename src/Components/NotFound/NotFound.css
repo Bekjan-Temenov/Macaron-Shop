@@ -61,7 +61,7 @@
     border-radius: 5px;
     cursor: pointer;
     margin-left: -370px;
-    /* border:1px solid red; */
+    border:1px solid red;
     /* gap: 50px; */
     margin-top: 50px;
   }

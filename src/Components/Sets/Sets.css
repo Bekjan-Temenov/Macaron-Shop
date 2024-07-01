@@ -24,13 +24,11 @@
 }
 .filter-set-text{
     background-color: rgba(247, 235, 229, 1);
-    border-radius: 100px;
-    display: flex;
-    flex-wrap: nowrap;
+    border-radius: 90px;
     text-align: center;
-    padding: 13px;
     cursor: pointer;
     margin-bottom: 30px;
+    padding: 1px 12px;
 }
 .filter-set-text p{
     text-align: center;

@@ -3,7 +3,7 @@ import { Container } from "../../Components/Container/Container";
 import { useDispatch, useSelector } from "react-redux";
 import { addToCart } from "../../Components/Home/cart";
 import card from "../../assets/bekjan/svg/card.svg";
-import productsData from "../../Components/api/api";
+import {productsData} from "../../Components/api/api"
 // import first from '../../Components/image/first.png';
 // import second from '../../Components/image/second.png';
 import center from "../../Components/image/center.png";

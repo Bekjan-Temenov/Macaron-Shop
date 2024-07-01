@@ -13,8 +13,8 @@ import InfoPages from "../pages/InfoPages";
 import OnenewsPages from "../pages/OnenewsPages";
 import BasketPage from "../pages/Basket/BasketPage";
 import DelivPage from "../pages/DelivPage";
+import MacaronPages from "../pages/MacaronPages";
 import SetsPage from "../pages/SetsPage";
-
 export const router = createBrowserRouter([
     {
         path: "/sign-up",
@@ -68,6 +68,10 @@ export const router = createBrowserRouter([
             {
                 path:"/basket",
                 element:<BasketPage/>
+            },
+            {
+                path:"/macaron",
+                element:<MacaronPages/>
             },
             {
                 path:"/sets",

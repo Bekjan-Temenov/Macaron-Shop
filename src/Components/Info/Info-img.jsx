@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
-import productsData from "../api/api";
+import {productsData} from "../api/api"
 import "./Info.css"
 
 

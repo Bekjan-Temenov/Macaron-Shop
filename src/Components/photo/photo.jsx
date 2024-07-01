@@ -44,7 +44,7 @@ const Photo = () => {
         <img src={photo7} alt="" className="profile7" />
         </Link>
         <Link to="/Profile">
-        <button>назад</button>
+        <button className="button2">назад</button>
         </Link>
       </div>
     </Container>

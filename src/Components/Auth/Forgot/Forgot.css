@@ -6,37 +6,32 @@
   flex-direction: column;
   align-items: center;
   justify-content: space-evenly;
+}
+.login-body {
   box-sizing: border-box;
-  border: 1px solid rgb(237, 237, 240);
-  border-radius: 0px 0px 5px 5px;
-  background: rgb(247, 235, 229);
+  padding: 30px;
 }
-.password h1{
-    color: rgb(41, 41, 41);
-    font-family: Montserrat;
-    font-size: 30px;
-    font-weight: 600;
-    line-height: 37px;
-    letter-spacing: 0%;
-    text-align: center;
-}
-.password span{
-  width: 370px;
-  color: rgb(41, 41, 41);
-  font-family: Proxima Nova;
-  font-size: 15px;
-  font-weight: 400;
-  line-height: -1px;
-  letter-spacing: 0%;
-  text-align: center;
-}
-.password button{
-  width: 370px;
-  height: 49px;
-  border-radius: 3px;
-  background: rgb(231, 66, 106);
+
+.login-body form {
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-right: 50px;
+}
+.input {
+  width: 350px;
+  margin-bottom: 15px;
+  height: 50px;
+  padding-left: 15px;
+  border: none;
+}
+.email {
+  color: rgb(41, 41, 41);
+  font-family: Proxima Nova;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: -1px;
+  letter-spacing: 0%;
+  text-align: left;
+  margin: 0;
+  padding-bottom: 5px;
 }
