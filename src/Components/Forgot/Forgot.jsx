@@ -1,8 +1,7 @@
 import React from 'react';
 import './Forgot.css';
-import makaron from '../../assets/aftandil/img/makaron.png'
+import makaron from '../../assets/aftandil/img/makaron.png';
 import { Link } from 'react-router-dom';
-
 
 const Forgot = () => {
   return (
@@ -10,25 +9,21 @@ const Forgot = () => {
       <div className="login-box">
         <div className="login-header">
           <img 
-            src={makaron } 
+            src={makaron} 
             alt="Macarons" 
             className="macaron-image" 
           />
         </div>
         <div className="login-body">
-          <h>Забыли пароль?</h>
+          <h2>Забыли пароль?</h2>
           <form>
             <div className="form-group">
-              <label  htmlFor="email">Email</label>
+              <label htmlFor="email">Email</label>
               <input type="email" id="email" name="email" required />
             </div>
-          
             <div className="form-footer">
-            
-                <Link to="/ForgotCom">
-              <button type="submit" className="login-button"> 
-              продолжить
-              </button>
+              <Link to="/ForgotCom">
+                <button type="submit" className="login-button">продолжить</button>
               </Link>
             </div>
           </form>

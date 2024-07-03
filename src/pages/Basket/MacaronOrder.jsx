@@ -5,8 +5,8 @@ const MacaronOrder = ({open ,setOpen}) => {
 //  const {open , setOpen} = props
 
 const handleModalClick = (e) => {
-    e.stopPropagation(); // Предотвращаем всплытие клика
-    setOpen(true); // Открываем модальное окно
+    e.stopPropagation(); 
+    setOpen(true); 
   };
   return (
     <div onClick={() => setOpen(false)} className="fixed inset-0 flex items-center justify-center bg-gray-500 bg-opacity-75">

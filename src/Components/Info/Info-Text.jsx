@@ -7,7 +7,7 @@ import imgBasket from "../../assets/Sherniaz/svg/Group3.svg";
 import img1 from "../../assets/Sherniaz/svg/Group227.svg";
 import img2 from "../../assets/Sherniaz/svg/Group226(1).svg";
 import img3 from "../../assets/Sherniaz/svg/Group225.svg";
-import productsData from "../api/api";
+import {productsData} from "../api/api"
 import "./Info.css";
 
 const InfoText = () => {

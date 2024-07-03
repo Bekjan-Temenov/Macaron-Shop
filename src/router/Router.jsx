@@ -13,7 +13,10 @@ import InfoPages from "../pages/InfoPages";
 import OnenewsPages from "../pages/OnenewsPages";
 import BasketPage from "../pages/Basket/BasketPage";
 import DelivPage from "../pages/DelivPage";
-
+import MacaronPages from "../pages/MacaronPages";
+import SetsPage from "../pages/SetsPage";
+import Dessertspages from "../pages/Dessertspages";
+import WeddingPage from "../pages/WeddingPage";
 export const router = createBrowserRouter([
     {
         path: "/sign-up",
@@ -65,10 +68,26 @@ export const router = createBrowserRouter([
                 element:<DelivPage/>
             },
             {
-                path:"/Basket",
+                path:"/basket",
                 element:<BasketPage/>
             },
+            {
+                path:"/macaron",
+                element:<MacaronPages/>
+            },
+            {
+                path:"/sets",
+                element:<SetsPage/>
+            },
+            {
+                path:"/Desserts",
+                element:<Dessertspages/>
+            },
+            {
+                path:"/Wedding",
+                element:<WeddingPage/>
+            },
+
         ],
     },
 ]);
-

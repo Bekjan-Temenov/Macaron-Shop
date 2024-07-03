@@ -3,6 +3,18 @@
   height: 300px;
   margin-top: -20px;
   display: flex;
+ 
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.login-body {
+  box-sizing: border-box;
+  padding: 30px;
+}
+
+.login-body form {
+  display: flex;
   align-items: center;
   justify-content: center;
 }

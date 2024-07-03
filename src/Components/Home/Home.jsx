@@ -1,10 +1,10 @@
 import Banner from "./Banner";
 import News from "./News/News";
 import Sale from "./Sale/Sale";
-import Sets from "./Sets"
+import Sets from "./Sets";
 import Happy from "./happy/Happy";
-import Producs from "./products/Producs";
-import Care from "../Home/Care/Care"
+import Products from "./products/Producs"; // corrected the import
+import Care from "../Home/Care/Care";
 
 function Home() {
   return (
@@ -13,10 +13,11 @@ function Home() {
       <Sets />
       <Sale />
       <Happy />
-      <Producs />
+      <Products /> {/* corrected the component name */}
       <News />
       <Care />
     </>
   );
 }
+
 export default Home;

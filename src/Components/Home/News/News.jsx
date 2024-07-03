@@ -50,6 +50,7 @@ export default function News() {
             }
         })
     }
+
     return (
         <Container>
             <motion.div
@@ -57,7 +58,6 @@ export default function News() {
                 whileInView="visible"
                 className='news-carusel'
                 viewport={{ amount: 0.3, once: true }}>
-
                 <motion.div variants={animation} custom={1} className='news-text-sale'>
                     Новости
                 </motion.div>
@@ -80,11 +80,11 @@ export default function News() {
                             </motion.div>
                         </SwiperSlide>
                     ))}
-                    <button className="nabor">
-                        Все новости
-                    </button>
                 </Swiper>
+                <button className="nabor">
+                    Все новости
+                </button>
             </motion.div>
-        </Container >
+        </Container>
     );
 }

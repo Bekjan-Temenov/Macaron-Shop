@@ -1,0 +1,54 @@
+.afto {
+  margin-left: 270px;
+  margin-top: -150px;
+  /* margin-bottom: 500px; */
+}
+.maco {
+  margin-top: -300px;
+  display: flex;
+  gap: 30px;
+}
+.maco_2 {
+  margin-left: 300px;
+  margin-top: -600px;
+  margin-top: 200px;
+}
+.wedding {
+  font-family: Montserrat;
+  font-size: 42px;
+  font-weight: 600;
+  line-height: 51.2px;
+  text-align: center;
+  display: flex;
+  justify-content: end;
+  margin-top: -400px;
+}
+.gentle {
+  font-family: Proxima Nova;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 21.92px;
+  text-align: center;
+  margin-left: 600px;
+}
+
+.button__prais {
+  /* margin-top: -300px; */
+  margin-left: 600px;
+}
+.fish {
+  /* margin-top: -200px; */
+  margin-left: 600px;
+}
+
+.wedding_2 {
+  font-family: Montserrat;
+  font-size: 30px;
+  font-weight: 600;
+  line-height: 36.57px;
+  text-align: center;
+  margin-top: 100px;
+}
+.motion {
+    margin-top: 300px;
+}

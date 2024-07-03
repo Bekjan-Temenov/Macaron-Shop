@@ -4,10 +4,10 @@ import { Link } from "react-router-dom";
 import { addToCart } from "../cart";
 import card from "../../../assets/bekjan/svg/cards.svg";
 import { motion } from "framer-motion";
-import productData from "../../api/api";
-import "./Producs.css";
+import {productsData} from "../../api/api";
+import "./Producs.css"; // corrected the file name
 
-const Producs = () => {
+const Products = () => { // corrected the component name
     const dispatch = useDispatch();
 
     const addCart = (item) => {
@@ -44,7 +44,7 @@ const Producs = () => {
                     Популярные наборы
                 </motion.h1>
                 <div className="products">
-                    {productData.map((product, index) => (
+                    {productsData.map((product, index) => (
                         <motion.div
                             variants={animation}
                             custom={index}
@@ -87,4 +87,4 @@ const Producs = () => {
     );
 };
 
-export default Producs;
+export default Products; // corrected the export name

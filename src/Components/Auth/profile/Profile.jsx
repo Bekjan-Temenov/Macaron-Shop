@@ -32,8 +32,19 @@ function Profile() {
 
         <div className="inp_main">
           <div className="inProfile">
+            <input className="inp_2" 
+            type="text"
+             placeholder="имя"
+              required />
+
             <input className="inp_2" type="text" placeholder="имя" required />
-            <input className="inp_2" type="text" placeholder="фамилия" required />
+
+             <input
+              className="inp_2"
+              type="text"
+              placeholder="фамилия"
+              required
+            />
           </div>
           <div className="inProfile2">
             <input className="inp_2" type="text" placeholder="@gmail" required />
@@ -47,6 +58,12 @@ function Profile() {
               <Link to="/">
                 <button className="btn_2">Готово</button>
               </Link>
+
+              <Link to="/RegistrationForm">
+                {" "}
+                <p className="w=[50px]">регистратция</p>{" "}
+              </Link>
+
             </div>
           </div>
         </div>
