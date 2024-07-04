@@ -1,5 +1,5 @@
 import React from "react";
-import { useDispatch } from 'react-redux';
+import { useDispatch } from "react-redux";
 import { Link } from "react-router-dom";
 import { addToCart } from "../Home/cart";
 import card from "../../assets/bekjan/svg/card.svg";
@@ -7,7 +7,7 @@ import { motion } from "framer-motion";
 import yolka from "../../assets/aftandil/img/yolka.png";
 import sheet from "../../assets/aftandil/svg/sheet.svg";
 import maco from "../../assets/aftandil/svg/maco.svg";
-import ter from '../../assets/aftandil/svg/ter.svg'
+import ter from "../../assets/aftandil/svg/ter.svg";
 import "./Wedding.css";
 import { Container } from "../Container/Container";
 
@@ -17,21 +17,21 @@ const weddingData = [
     name: "Продукт 1",
     description: "Описание продукта 1",
     price: 100,
-    img: yolka
+    img: yolka,
   },
   {
     id: 2,
     name: "Продукт 2",
     description: "Описание продукта 2",
     price: 200,
-    img: maco
+    img: maco,
   },
   {
     id: 3,
     name: "Продукт 3",
     description: "Описание продукта 3",
     price: 300,
-    img: yolka
+    img: yolka,
   },
   // Add more products as needed
 ];
@@ -47,7 +47,7 @@ const Wedding = () => {
 
   const pageAnimation = {
     hidden: { opacity: 0, y: 20 },
-    visible: { opacity: 1, y: 0, transition: { duration: 1.5 } }
+    visible: { opacity: 1, y: 0, transition: { duration: 1.5 } },
   };
 
   const productAnimation = {
@@ -58,18 +58,14 @@ const Wedding = () => {
       transition: {
         delay: custom * 0.3,
         duration: 1,
-        ease: 'easeInOut',
+        ease: "easeInOut",
       },
     }),
   };
 
   return (
     <Container>
-      <motion.div
-        initial="hidden"
-        animate="visible"
-        variants={pageAnimation}
-      >
+      <motion.div initial="hidden" animate="visible" variants={pageAnimation}>
         <div>
           <img className="ml-4" src={yolka} alt="Ёлка" />
           <img className="maco" src={maco} alt="Мако" />
@@ -77,8 +73,8 @@ const Wedding = () => {
           <img className="maco_2" src={maco} alt="Мако 2" />
           <h1 className="wedding">Свадебное предложение</h1>
           <p className="gentle">
-            Нежные пирожные макаронс с разными вкусами для <br /> украшения вашего
-            свадебного торжества
+            Нежные пирожные макаронс с разными вкусами для <br /> украшения
+            вашего свадебного торжества
           </p>
           <div className="button__prais flex justify-center items-center bg-gray-100">
             <button className="m-4 px-6 py-2 bg-white border border-gray-300 rounded shadow hover:bg-gray-50">
@@ -89,14 +85,14 @@ const Wedding = () => {
             </button>
           </div>
           <p className="fish">
-            Рыба-текст предложения <br /><br /> Приятно, граждане, наблюдать, как действия
-            представителей оппозиции, превозмогая сложившуюся непростую
-            экономическую ситуацию, смешаны с не уникальными данными до степени
-            совершенной неузнаваемости, из-за чего возрастает их статус
-            бесполезности.
+            Рыба-текст предложения <br />
+            <br /> Приятно, граждане, наблюдать, как действия представителей
+            оппозиции, превозмогая сложившуюся непростую экономическую ситуацию,
+            смешаны с не уникальными данными до степени совершенной
+            неузнаваемости, из-за чего возрастает их статус бесполезности.
           </p>
         </div>
-      
+
         <div className="motion">
           <motion.div
             initial="hidden"
@@ -159,13 +155,16 @@ const Wedding = () => {
                   Мы открыты для новых идей
                 </h2>
                 <p className="mt-2 text-center text-sm text-gray-600">
-                  Каждое событие уникально и мы готовы предложить индивидуальные решения для Вашего мероприятия
+                  Каждое событие уникально и мы готовы предложить индивидуальные
+                  решения для Вашего мероприятия
                 </p>
               </div>
               <form className="mt-8 space-y-6">
                 <div className="rounded-md shadow-sm -space-y-px">
                   <div>
-                    <label htmlFor="name" className="sr-only">Ваше имя</label>
+                    <label htmlFor="name" className="sr-only">
+                      Ваше имя
+                    </label>
                     <input
                       id="name"
                       name="name"
@@ -176,7 +175,9 @@ const Wedding = () => {
                     />
                   </div>
                   <div>
-                    <label htmlFor="phone" className="sr-only">Телефон</label>
+                    <label htmlFor="phone" className="sr-only">
+                      Телефон
+                    </label>
                     <input
                       id="phone"
                       name="phone"
@@ -188,7 +189,9 @@ const Wedding = () => {
                   </div>
                 </div>
                 <div>
-                  <label htmlFor="idea" className="sr-only">Опишите Вашу идею</label>
+                  <label htmlFor="idea" className="sr-only">
+                    Опишите Вашу идею
+                  </label>
                   <textarea
                     id="idea"
                     name="idea"
@@ -206,12 +209,21 @@ const Wedding = () => {
                   </button>
                 </div>
                 <p className="mt-2 text-center text-xs text-gray-600">
-                  Нажимая на кнопку "Оформить заказ" я принимаю и соглашаюсь с <a href="#" className="text-indigo-600">Договором оферты</a> и разрешаю обработку моих персональных данных в соответствии с <a href="#" className="text-indigo-600">Политикой конфиденциальности</a>.
+                  Нажимая на кнопку "Оформить заказ" я принимаю и соглашаюсь с{" "}
+                  <a href="#" className="text-indigo-600">
+                    Договором оферты
+                  </a>{" "}
+                  и разрешаю обработку моих персональных данных в соответствии с{" "}
+                  <a href="#" className="text-indigo-600">
+                    Политикой конфиденциальности
+                  </a>
+                  .
                 </p>
               </form>
             </div>
           </div>
         </div>
+        
       </motion.div>
     </Container>
   );

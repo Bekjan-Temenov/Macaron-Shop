@@ -1,6 +1,6 @@
 import { createBrowserRouter } from "react-router-dom";
 import Layout from "../layout/Layout";
-import NotFoundPage from "../pages/NotFoundPage";
+// import NotFoundPage from "../pages/NotFoundPage";
 import HomePage from "../pages/HomePage"
 import NoPage from "../pages/NoPage";
 import RegistrationForm from "../Components/Auth/RegistrationForm/RegistrationForm";
@@ -17,6 +17,7 @@ import MacaronPages from "../pages/MacaronPages";
 import SetsPage from "../pages/SetsPage";
 import Dessertspages from "../pages/Dessertspages";
 import WeddingPage from "../pages/WeddingPage";
+import NotfauntComponentPages from "../pages/NotfauntComponentPages";
 export const router = createBrowserRouter([
     {
         path: "/sign-up",
@@ -37,7 +38,7 @@ export const router = createBrowserRouter([
     {
         path: "/",
         element: <Layout />,
-        errorElement: <NotFoundPage />,
+        errorElement: <NotfauntComponentPages />,
         children: [
             {
                 path: "/",
@@ -87,6 +88,10 @@ export const router = createBrowserRouter([
                 path:"/Wedding",
                 element:<WeddingPage/>
             },
+            // {
+            //     path:"/NotfauntComponent",
+            //     element:<NotfauntComponentPages/>
+            // },
 
         ],
     },
