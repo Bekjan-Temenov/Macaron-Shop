@@ -1,0 +1,37 @@
+.password{
+  /* border:1px solid red;  */
+  height: 300px;
+  margin-top: -20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.login-body {
+  box-sizing: border-box;
+  padding: 30px;
+}
+
+.login-body form {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.input {
+  width: 350px;
+  margin-bottom: 15px;
+  height: 50px;
+  padding-left: 15px;
+  border: none;
+}
+.email {
+  color: rgb(41, 41, 41);
+  font-family: Proxima Nova;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: -1px;
+  letter-spacing: 0%;
+  text-align: left;
+  margin: 0;
+  padding-bottom: 5px;
+}

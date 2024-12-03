@@ -1,0 +1,126 @@
+.products {
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.h1 {
+    color: rgb(41, 41, 41);
+    font-family: Montserrat, sans-serif;
+    font-size: 30px;
+    font-weight: 600;
+    line-height: 37px;
+    text-align: left;
+    margin: 0 auto 30px;
+    text-align: center;
+}
+
+.producter {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    width: 370px;
+    height: 456px;
+    border-radius: 5px;
+    margin-bottom: 50px;
+    background-color: white;
+}
+
+.img-product {
+    width: 370px;
+    height: 300px;
+}
+.img-pro{
+    position: initial;
+    z-index: 1;
+}
+.infos {
+    border-bottom-right-radius: 6px;
+    border-bottom-left-radius: 6px;
+    width: 100%;
+}
+
+.texts {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    margin-bottom: 5px;
+}
+
+.texts .h3 {
+    color: rgb(41, 41, 41);
+    font-family: Montserrat, sans-serif;
+    font-size: 18px;
+    font-weight: 600;
+    margin: 0;
+}
+
+.texts .p {
+    color: rgb(106, 105, 105);
+    font-family: Proxima Nova, sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    width: 250px;
+}
+
+.price {
+    border-top: 1px solid rgb(180, 180, 180);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+.price .p {
+    color: rgb(231, 66, 106);
+    border-right: 1px solid rgb(180, 180, 180);
+    font-family: Montserrat, sans-serif;
+    font-size: 18px;
+    font-weight: 600;
+    padding: 10px;
+    width: 210px;
+    margin: 0;
+}
+
+.product-btn {
+    border: 1px solid white;
+    padding: 11px;
+    width: 150px;
+    margin: auto;
+    margin-top:6px ;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    color:black;
+    gap: 8px;
+    cursor: pointer;
+}
+.product-btn:hover{
+    color:red;
+    background-color: white;
+}
+
+.nabor {
+    padding: 18px 48px;
+    background-color: rgb(247, 247, 247);
+    border-radius: 6px;
+    border: 1px solid rgb(78, 157, 211);
+    margin: 30px auto;
+    color: rgb(0, 0, 0);
+    font-family: Montserrat, sans-serif;
+    font-size: 13px;
+    font-weight: 600;
+    text-align: center;
+    cursor: pointer;
+}
+
+.nabor:hover {
+    background-color: rgb(118, 186, 232);
+    color: white;
+}

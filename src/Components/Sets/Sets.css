@@ -1,0 +1,37 @@
+.main-set{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.mein-link{
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+.main-links{
+    display: flex;
+    gap: 5px;
+}
+.mein-link-p{
+    color:rgb(0, 140, 255)
+}
+.filter-set{
+    display: flex;
+    justify-content: space-between;
+    gap:5px;
+    margin-top: 40px;
+}
+.filter-set-text{
+    background-color: rgba(247, 235, 229, 1);
+    border-radius: 90px;
+    text-align: center;
+    cursor: pointer;
+    margin-bottom: 30px;
+    padding: 1px 12px;
+}
+.filter-set-text p{
+    text-align: center;
+    color: rgb(44, 44, 44);
+    font-size: 15px;
+}

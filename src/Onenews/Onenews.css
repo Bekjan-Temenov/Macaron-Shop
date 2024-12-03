@@ -1,0 +1,174 @@
+/* onenews.css */
+
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #f4f4f4;
+  }
+  
+  .h1, .h2 {
+    color: #333;
+  }
+  
+  .p {
+    color: #666;
+  }
+  
+  /* Header Styles */
+  .App-header {
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    padding: 0;
+  }
+  
+  nav ul li {
+    margin: 0 15px;
+  }
+  
+  nav ul li a {
+    text-decoration: none;
+    color: #007bff;
+    font-weight: bold;
+    transition: color 0.3s;
+  }
+  
+  nav ul li a:hover {
+    color: #0056b3;
+  }
+  
+  /* Main Section Styles */
+  .main-section {
+    display: flex;
+    justify-content: space-between;
+    padding: 40px 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin: 20px;
+  }
+  
+  .text-section {
+    width: 55%;
+    padding-right: 20px;
+  }
+  
+  .text-section .h1 {
+    margin-bottom: 20px;
+  }
+  
+  .image-section {
+    width: 40%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .image-section .img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+  }
+  
+  /* Gifts Section Styles */
+  .gifts-section {
+    padding: 40px 20px;
+    background-color: #f8f9fa;
+    border-radius: 10px;
+    margin: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .gifts-section .h2 {
+    margin-bottom: 20px;
+    color: #d9534f;
+  }
+  
+  .gifts-section .ul {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 20px;
+  }
+  
+  .gifts-section .ul .li {
+    margin-bottom: 10px;
+    font-size: 16px;
+  }
+  
+  .gift-images {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .gift-images .img {
+    width: 30%;
+    height: auto;
+    border-radius: 10px;
+  }
+  
+  /* Contact Section Styles */
+  .contact-section {
+    padding: 40px 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    margin: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .contact-section .h2 {
+    margin-bottom: 20px;
+    color: #d9534f;
+  }
+  
+  .form {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  
+  .form-group {
+    width: 48%;
+    margin-bottom: 20px;
+  }
+  
+  .form-group .label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #333;
+  }
+  
+  .form-group input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f8f8f8;
+  }
+  
+  .btn2 {
+    padding: 15px 30px;
+    background-color: #d9534f;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    align-self: flex-end;
+  }
+  
+  .btn2:hover {
+    background-color: #ee8d8a;
+  }
+  
+  /* Footer Styles */
+ 
