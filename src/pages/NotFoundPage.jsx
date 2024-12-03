@@ -1,9 +1,10 @@
+import NotFound from "../Components/NotFound/NotFound"
 
 
 function NotFoundPage() {
   return (
     <div>
-      Not Found 404
+      <NotFound/>      
     </div>
   );
 }

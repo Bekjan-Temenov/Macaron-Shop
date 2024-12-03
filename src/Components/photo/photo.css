@@ -1,0 +1,21 @@
+
+
+.photo {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); 
+    gap: 10px;
+    text-align: center;
+  }
+  
+  .profile, .profile2, .profile3, .profile4, .profile5, .profile6, .profile7 {
+    width: 100%; 
+    height: auto;
+    border-radius: 50%; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+  }
+  
+  .Container {
+    max-width: 1200px; 
+    margin: 0 auto; 
+  }
+  
